@@ -1,0 +1,33 @@
+main {
+    background-color: #faf9f9;
+}
+
+.catalog {
+    &-nav {
+        float: left;
+    }
+
+    &-body {
+        margin-left: 290px;
+        &::after {
+            content: '';
+            clear: both;
+            display: table;
+        }
+    }
+
+    &-filter {
+    }
+
+    &-list {
+        margin-left: -14px;
+        margin-right: -14px;
+
+        &__item {
+            width: 33.333%;
+            padding: 14px;
+        }
+    }
+
+
+}

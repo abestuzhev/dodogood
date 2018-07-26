@@ -1,0 +1,99 @@
+.c-layout {
+    position: relative;
+    width: 100%;
+    max-width: 1155px;
+    margin: 0 auto;
+    padding: 0 22px;
+
+    &::after {
+        content: '';
+        clear: both;
+        display: table;
+    }
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    position: relative;
+    min-height: 100%;
+    height: auto !important;
+    overflow: hidden;
+    margin-bottom: -250px;
+
+    &:after {
+        content: "";
+        display: block;
+        height: 250px;
+    }
+}
+
+.c-breadcrumb {
+    padding: 30px 0;
+
+    &__item {
+        display: inline-block;
+        font-size: 14px;
+        color: #aeaeae;
+        letter-spacing: 1px;
+
+        &::after {
+            content: '/';
+            display: inline-block;
+            margin: 0 3px;
+        }
+
+        &:last-child::after {
+            content: '';
+        }
+    }
+
+    &__link {
+        color: #aeaeae;
+        letter-spacing: 1px;
+    }
+
+    &-word {
+        display: inline-block;
+    }
+}
+
+.c-card-product {
+    min-height: 280px;
+    border-radius: 6px;
+    background-color: #ffffff;
+    overflow: hidden;
+    border: 1px solid #fff;
+
+    &__img {
+
+    }
+
+    &__body {
+        padding: 10px 20px;
+
+    }
+
+    &__title {
+        color: #121214;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1;
+    }
+
+    &__type {
+
+    }
+
+    &__price {
+
+    }
+
+    &__footer {
+        
+    }
+}

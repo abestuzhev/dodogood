@@ -99,14 +99,14 @@ textarea {
 	box-sizing: border-box;
 
 	&::-webkit-input-placeholder {
-		color: $input_placeholder_color;
+		color: #eee;
 	}
 
 	&::-moz-placeholder {
-		color: $input_placeholder_color;
+		color: #eee;
 	}
 	&:-ms-input-placeholder {
-		color: $input_placeholder_color;
+		color: #eee;
 	}
 
 	&:focus {
