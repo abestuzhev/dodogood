@@ -58,32 +58,94 @@
         </div>
         <div class="header-body">
             <div class="c-layout">
-                <div class="header-col__left">
-                    <div class="header-login">
-                        <a href="#" class="header-login__entry">Вход</a>
-                        <a href="#" class="header-login__reg">Регистрация</a>
-                    </div>
-                </div>
-                <div class="header-col__center">
-                    <a href="#" class="header-logo">
-                        <img src="" alt="">
-                    </a>
-                </div>
-                <div class="header-col__right">
-                    <div class="header-search"></div>
-                    <div class="header-basket">Корзина пуста</div>
-                </div>
+                <ul class="header-grid">
+                    <li class="header-col header-col__left">
+                        <div class="header-login">
+                            <a href="#" class="header-login__item header-login__entry">Вход</a>
+                            <a href="#" class="header-login__item header-login__reg">Регистрация</a>
+                        </div>
+                    </li>
+                    <li class="header-col header-col__center">
+                        <a href="#" class="header-logo">
+                            <img src="./img/logo.svg" alt="">
+                        </a>
+                        <a href="#" class="header-logo-mobile">
+                            <img src="" alt="">
+                        </a>
+                    </li>
+                    <li class="header-col header-col__right">
+                        <div class="header-operation">
+                            <div class="header-operation__item">
+                                <div class="header-search">
+                                    <input type="search" name="header_search">
+                                </div>
+                            </div>
+                            <div class="header-operation__item">
+                                <a href="#" class="header-basket">Корзина пуста</a>
+                            </div>
+                        </div>
+                        
+                        
+                    </li>
+                </ul>
             </div>
             
         </div>
         <div class="header-menu">
             <ul class="header-menu__list">
-                <li class="header-menu__item"><a href="#" class="header-menu__link">Мужская</a></li>
-                <li class="header-menu__item"><a href="#" class="header-menu__link">Женская</a></li>
-                <li class="header-menu__item"><a href="#" class="header-menu__link">Детская</a></li>
-                <li class="header-menu__item"><a href="#" class="header-menu__link">Большие размеры</a></li>
-                <li class="header-menu__item"><a href="#" class="header-menu__link">Новинки</a></li>
-                <li class="header-menu__item"><a href="#" class="header-menu__link">SALE</a></li>
+                <li class="header-menu__item">
+                    <a href="#" class="header-menu__link">Мужская</a>
+                    
+                    <div class="header-submenu">
+                        <div class="c-layout">
+                            <div class="header-submenu__title">Футболки</div>
+                            <div class="header-submenu__body">
+                                <ul class="header-submenu__list">
+                                    <li class="header-submenu__item"><a href="#">Короткий рукав</a></li>
+                                    <li class="header-submenu__item"><a href="#">Длинный рукав</a></li>
+                                    <li class="header-submenu__item"><a href="#">Клубные</a></li>
+                                </ul>
+                                <ul class="header-submenu__list">
+                                    <li class="header-submenu__item"><a href="#">Поло</a></li>
+                                    <li class="header-submenu__item"><a href="#">Майки</a></li>
+                                    <li class="header-submenu__item"><a href="#">Толстовки</a></li>
+                                </ul>
+                                <ul class="header-submenu__list">
+                                    <li class="header-submenu__item"><a href="#">Водолазки</a></li>
+                                    <li class="header-submenu__item"><a href="#">Куртки</a></li>
+                                    <li class="header-submenu__item"><a href="#">Ветровки</a></li>
+                                </ul>
+                                <ul class="header-submenu__list">
+                                    <li class="header-submenu__item"><a href="#">Жилеты</a></li>
+                                    <li class="header-submenu__item"><a href="#">Анораки</a></li>
+                                    <li class="header-submenu__item"><a href="#">Брюки</a></li>
+                                </ul>
+                                <ul class="header-submenu__list">
+                                    <li class="header-submenu__item"><a href="#">Спортивный стиль</a></li>
+                                    <li class="header-submenu__item"><a href="#">Шорты</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    
+                </li>
+                <li class="header-menu__item">
+                    <a href="#" class="header-menu__link">Женская</a>
+                </li>
+                <li class="header-menu__item">
+                    <a href="#" class="header-menu__link">Детская</a>
+                </li>
+                <li class="header-menu__item">
+                    <a href="#" class="header-menu__link">Большие размеры</a>
+                </li>
+                <li class="header-menu__item">
+                    <a href="#" class="header-menu__link">Новинки</a>
+                </li>
+                <li class="header-menu__item">
+                    <a href="#" class="header-menu__link">SALE</a>
+                </li>
             </ul>
         </div>
         
@@ -107,30 +169,120 @@
             </nav>
             
             <div class="catalog">
-                <div class="catalog-nav"></div>
+                <div class="catalog-nav">
+                    <div class="catalog-nav__title">Футболки</div>
+                    <ul class="catalog-nav__list">
+                        <li class="catalog-nav__item"><a href="#">Короткий рукав</a></li>
+                        <li class="catalog-nav__item"><a href="#">Длинный рукав</a></li>
+                        <li class="catalog-nav__item"><a href="#">Клубные</a></li>
+                    </ul>
+                </div>
                 <div class="catalog-body">
                     <div class="catalog-filter">
                         <div class="catalog-filter__item"></div>
                     </div>
-                    <div class="catalog-list">
-                        <div class="catalog-list__item">
+                    <ul class="catalog-list">
+                        <li class="catalog-list__item">
                             <div class="c-card-product">
-                                <div class="c-card-product__img"><img src="./img/product-1.jpg" alt=""></div>
+                                <div class="c-card-product__img"><a href="#"><img src="./img/product-1.jpg" alt=""></a></div>
                                 <div class="c-card-product__body">
-                                    <div class="c-card-product__title">Guns and Roses</div>
-                                    <div class="c-card-product__type">Футболка</div>
-                                    <div class="c-card-product__price">4 345 руб.</div>
-                                </div>
-                                <div class="c-card-product__footer">
-                                    <div class="c-card-product__size"></div>
-                                    <div class="c-card-product__btns">
-                                        <a href="#" class="c-card-product__btn-more">Подробнее</a>
-                                        <a href="#" class="c-card-product__btn-basket">В корзину</a>
+                                    <div class="c-card-product__title"><a href="#">Guns and Roses</a></div>
+                                    <div class="c-card-product__grid">
+                                        <div class="c-card-product__type">Футболка</div>
+                                        <div class="c-card-product__price">4 345 руб.</div>
                                     </div>
                                 </div>
+                                <div class="c-card-product-extra">
+                                    <div class="c-card-product__footer">
+                                        <div class="c-card-product-size">
+                                            <div class="c-card-product-size__item">Размер</div>
+                                            <div class="c-card-product-size__item">XXS XS S M L</div>
+                                        </div>
+                                        <div class="c-card-product__btns">
+                                            <a href="#" class="c-card-product__btn c-card-product__btn-more">Подробнее</a>
+                                            <a href="#" class="c-card-product__btn c-card-product__btn-basket">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
                             </div>
-                        </div>
-                    </div>
+                        </li>
+                        <li class="catalog-list__item">
+                            <div class="c-card-product">
+                                <div class="c-card-product__img"><a href="#"><img src="./img/product-1.jpg" alt=""></a></div>
+                                <div class="c-card-product__body">
+                                    <div class="c-card-product__title"><a href="#">Guns and Roses</a></div>
+                                    <div class="c-card-product__grid">
+                                        <div class="c-card-product__type">Футболка</div>
+                                        <div class="c-card-product__price">4 345 руб.</div>
+                                    </div>
+                                </div>
+                                <div class="c-card-product-extra">
+                                    <div class="c-card-product__footer">
+                                        <div class="c-card-product-size">
+                                            <div class="c-card-product-size__item">Размер</div>
+                                            <div class="c-card-product-size__item">XXS XS S M L</div>
+                                        </div>
+                                        <div class="c-card-product__btns">
+                                            <a href="#" class="c-card-product__btn c-card-product__btn-more">Подробнее</a>
+                                            <a href="#" class="c-card-product__btn c-card-product__btn-basket">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                            </div>
+                        </li>
+                        <li class="catalog-list__item">
+                            <div class="c-card-product">
+                                <div class="c-card-product__img"><a href="#"><img src="./img/product-1.jpg" alt=""></a></div>
+                                <div class="c-card-product__body">
+                                    <div class="c-card-product__title"><a href="#">Guns and Roses</a></div>
+                                    <div class="c-card-product__grid">
+                                        <div class="c-card-product__type">Футболка</div>
+                                        <div class="c-card-product__price">4 345 руб.</div>
+                                    </div>
+                                </div>
+                                <div class="c-card-product-extra">
+                                    <div class="c-card-product__footer">
+                                        <div class="c-card-product-size">
+                                            <div class="c-card-product-size__item">Размер</div>
+                                            <div class="c-card-product-size__item">XXS XS S M L</div>
+                                        </div>
+                                        <div class="c-card-product__btns">
+                                            <a href="#" class="c-card-product__btn c-card-product__btn-more">Подробнее</a>
+                                            <a href="#" class="c-card-product__btn c-card-product__btn-basket">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                            </div>
+                        </li>
+                        <li class="catalog-list__item">
+                            <div class="c-card-product">
+                                <div class="c-card-product__img"><a href="#"><img src="./img/product-1.jpg" alt=""></a></div>
+                                <div class="c-card-product__body">
+                                    <div class="c-card-product__title"><a href="#">Guns and Roses</a></div>
+                                    <div class="c-card-product__grid">
+                                        <div class="c-card-product__type">Футболка</div>
+                                        <div class="c-card-product__price">4 345 руб.</div>
+                                    </div>
+                                </div>
+                                <div class="c-card-product-extra">
+                                    <div class="c-card-product__footer">
+                                        <div class="c-card-product-size">
+                                            <div class="c-card-product-size__item">Размер</div>
+                                            <div class="c-card-product-size__item">XXS XS S M L</div>
+                                        </div>
+                                        <div class="c-card-product__btns">
+                                            <a href="#" class="c-card-product__btn c-card-product__btn-more">Подробнее</a>
+                                            <a href="#" class="c-card-product__btn c-card-product__btn-basket">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -139,7 +291,45 @@
     </main>
 </div>
 <footer class="footer">
-
+    <div class="c-layout">
+        <ul class="footer-grid">
+            <li class="footer-col">
+                <div class="footer-logo">
+                    <img src="./img/footer-logo.svg" alt="">
+                </div>
+                <div class="footer-address">
+                    Адрес: 124460, г. Зеленоград,
+                    проезд 4922, дом 4, стр.4
+                </div>
+            </li>
+            <li class="footer-col">
+                <ul class="footer-menu">
+                    <li class="footer-menu__item"><a href="#" class="footer-menu__link">О компании</a></li>
+                    <li class="footer-menu__item"><a href="#" class="footer-menu__link">Оплата и доставка</a></li>
+                    <li class="footer-menu__item"><a href="#" class="footer-menu__link">Партнерская программа</a></li>
+                    <li class="footer-menu__item"><a href="#" class="footer-menu__link">Контакты</a></li>
+                </ul>
+            </li>
+            <li class="footer-col">
+                <div class="footer-social">
+                    <div class="footer-social__title">Мы в соцсетях</div>
+                    <div class="footer-social__item"></div>
+                    <div class="footer-social__item"></div>
+                </div>
+                <div class="footer-contact">
+                    <div class="footer-contact__title">связаться с нами</div>
+                    <ul class="footer-contact__list">
+                        <li class="footer-contact__item"><a href="#">+ 7 (495) 502 49 77</a></li>
+                        <li class="footer-contact__item"><a href="#">+ 7 (925) 502 49 77</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <div class="footer-copyright">
+            <p>@ 2018 г. ИП Клочихина Додо Александровна.</p>
+            <p>Все права защищены</p>
+        </div>
+    </div>
 </footer>
 
 

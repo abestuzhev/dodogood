@@ -22,8 +22,16 @@ main {
     &-list {
         margin-left: -14px;
         margin-right: -14px;
+        margin-bottom: 28px;
+
+        &::after {
+            content: '';
+            clear: both;
+            display: table;
+        }
 
         &__item {
+            float: left;
             width: 33.333%;
             padding: 14px;
         }
