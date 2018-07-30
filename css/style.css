@@ -358,16 +358,24 @@ body {
   position: relative; }
   .c-card-filter__title {
     cursor: pointer; }
+  .c-card-filter.active .c-card-filter__body {
+    display: block; }
   .c-card-filter__body {
     display: none;
     position: absolute;
-    top: 0;
+    top: 100%;
     left: 0;
     background-color: #fff;
     border-radius: 5px;
-    border: 1px solid #ccc; }
-  .c-card-filter__body.active {
-    display: block; }
+    border: 1px solid #ccc;
+    padding: 14px 10px;
+    margin-top: 6px;
+    width: 200px;
+    z-index: 10; }
+  .c-card-filter__item {
+    margin-bottom: 8px; }
+    .c-card-filter__item:last-child {
+      margin-bottom: 0; }
 
 /*иконки*/
 .c-symbol {

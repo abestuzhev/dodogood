@@ -34,7 +34,8 @@ $(function(){
     });
 
 
-    $(document).on('click', function(e){
+    $(document).on('click', '.c-card-filter__title', function(e){
         e.preventDefault();
+        $(this).parents('.c-card-filter').toggleClass('active');
     })
 })

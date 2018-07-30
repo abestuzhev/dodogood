@@ -285,17 +285,32 @@ body {
         cursor: pointer;
     }
 
+    &.active {
+        .c-card-filter__body {
+            display: block;
+        }
+    }
+
     &__body {
         display: none;
         position: absolute;
-        top: 0;
+        top: 100%;
         left: 0;
         background-color: #fff;
         border-radius: 5px;
         border: 1px solid #ccc;
+        padding: 14px 10px;
+        margin-top: 6px;
+        width: 200px;
+        z-index: 10;
     }
-    &__body.active {
-        display: block;
+
+    &__item {
+        margin-bottom: 8px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }
 
