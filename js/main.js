@@ -36,6 +36,19 @@ $(function(){
 
     $(document).on('click', '.c-card-filter__title', function(e){
         e.preventDefault();
+        $(this).parents('.catalog-filter__item').siblings().find('.c-card-filter').removeClass('active');
         $(this).parents('.c-card-filter').toggleClass('active');
-    })
+    });
+
+    $('.c-select').SumoSelect();
+
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 4,
+        spaceBetween: 30,
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
 })

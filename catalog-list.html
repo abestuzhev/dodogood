@@ -12,6 +12,7 @@
     <link type="text/css" href="./css/style.css" rel="stylesheet">
     <link type="text/css" href="./css/media.css" rel="stylesheet">
     <link type="text/css" href="./js/sumoselect/sumoselect.css" rel="stylesheet" media="all"/>
+    <link type="text/css" href="./js/swiper/swiper.css" rel="stylesheet" media="all"/>
     <link type="text/css" href="./fonts/font.css" rel="stylesheet" media="all"/>
     
     
@@ -178,7 +179,7 @@
             </nav>
             
             <div class="catalog">
-                <h1 class="c-h1-title">Мужская одежда</h1>
+                <h2 class="c-h2-title">Мужская одежда</h2>
                 <div class="catalog-nav">
                     <div class="catalog-nav__title">Футболки</div>
                     <ul class="catalog-nav__list">
@@ -213,23 +214,96 @@
                     <div class="catalog-filter">
                         <form action="" name="filter-form">
                             <div class="catalog-filter__title">Фильтровать по:</div>
-                            <div class="catalog-filter__item">
-                                <div class="c-card-filter">
-                                    <div class="c-card-filter__title">Цена</div>
-                                    <div class="c-card-filter__body">
-                                        <ul class="c-card-filter__list">
-                                            <li class="c-card-filter__item">
-                                                <input type="radio" name="filter-price" id="filter-price-roz" class="c-input-radio" checked>
-                                                <label for="filter-price-roz" class="c-label-radio">Розничная цена</label>
-                                            </li>
-                                            <li class="c-card-filter__item">
-                                                <input type="radio" name="filter-price" id="filter-price-opt" class="c-input-radio">
-                                                <label for="filter-price-opt" class="c-label-radio">Розничная цена</label>
-                                            </li>
-                                        </ul>
+                            <ul class="catalog-filter__list">
+    
+                                
+                                <li class="catalog-filter__item">
+                                    <div class="c-card-filter">
+                                        <div class="c-card-filter__title">Цена</div>
+                                        <div class="c-card-filter__body">
+                                            <ul class="c-card-filter__list">
+                                                <li class="c-card-filter__item">
+                                                    <input type="radio" name="filter-price" id="filter-price-roz" class="c-input-radio" checked>
+                                                    <label for="filter-price-roz" class="c-label-radio">Розничная цена</label>
+                                                </li>
+                                                <li class="c-card-filter__item">
+                                                    <input type="radio" name="filter-price" id="filter-price-opt" class="c-input-radio">
+                                                    <label for="filter-price-opt" class="c-label-radio">Розничная цена</label>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
+                                </li>
+                                <li class="catalog-filter__item">
+                                    <div class="c-card-filter">
+                                        <div class="c-card-filter__title">Цвет</div>
+                                        <div class="c-card-filter__body">
+                                            <ul class="c-card-filter__list">
+                                                <li class="c-card-filter__item">
+                                                    <input type="radio" name="filter-price" id="filter-color-1" class="c-input-radio" checked>
+                                                    <label for="filter-color-1" class="c-label-radio">Розничная цена</label>
+                                                </li>
+                                                <li class="c-card-filter__item">
+                                                    <input type="radio" name="filter-price" id="filter-color-2" class="c-input-radio">
+                                                    <label for="filter-color-2" class="c-label-radio">Розничная цена</label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="catalog-filter__item">
+                                    <div class="c-card-filter">
+                                        <div class="c-card-filter__title">Размер</div>
+                                        <div class="c-card-filter__body">
+                                            <ul class="c-card-filter__list">
+                                                <li class="c-card-filter__item">
+                                                    <input type="radio" name="filter-price" id="filter-size-1" class="c-input-radio" checked>
+                                                    <label for="filter-size-1" class="c-label-radio">Розничная цена</label>
+                                                </li>
+                                                <li class="c-card-filter__item">
+                                                    <input type="radio" name="filter-price" id="filter-size-2" class="c-input-radio">
+                                                    <label for="filter-size-2" class="c-label-radio">Розничная цена</label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="catalog-filter__item">
+                                    <div class="c-card-filter">
+                                        <div class="c-card-filter__title">Состав</div>
+                                        <div class="c-card-filter__body">
+                                            <ul class="c-card-filter__list">
+                                                <li class="c-card-filter__item">
+                                                    <input type="checkbox" name="filter-price" id="filter-composition-1" class="c-input-checkbox" checked>
+                                                    <label for="filter-composition-1" class="c-label-checkbox">Бамбук</label>
+                                                </li>
+                                                <li class="c-card-filter__item">
+                                                    <input type="checkbox" name="filter-price" id="filter-composition-2" class="c-input-checkbox">
+                                                    <label for="filter-composition-2" class="c-label-checkbox">Хлопок</label>
+                                                </li>
+                                                <li class="c-card-filter__item">
+                                                    <input type="checkbox" name="filter-price" id="filter-composition-3" class="c-input-checkbox">
+                                                    <label for="filter-composition-3" class="c-label-checkbox">Вискоза</label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="catalog-filter__item">
+                                    <div class="c-card-filter">
+                                        <div class="c-card-filter__title">
+                                            <label>Сортировать по:</label>
+                                            <select name="filter" id="" class="c-select">
+                                                <option value="">популяртности</option>
+                                                <option value="">убыванию цены</option>
+                                                <option value="">возрастанию цены</option>
+                                            </select>
+                                        </div>
+                                        
+                                    </div>
+                                </li>
+                            </ul>
+                            
                         </form>
                         
                     </div>
@@ -334,7 +408,372 @@
         
                             </div>
                         </li>
+                        <li class="catalog-list__item">
+                            <div class="c-card-product">
+                                <div class="c-card-product__img"><a href="#"><img src="./img/product-1.jpg" alt=""></a></div>
+                                <div class="c-card-product__body">
+                                    <div class="c-card-product__title"><a href="#">Guns and Roses</a></div>
+                                    <div class="c-card-product__grid">
+                                        <div class="c-card-product__type">Футболка</div>
+                                        <div class="c-card-product__price">4 345 руб.</div>
+                                    </div>
+                                </div>
+                                <div class="c-card-product-extra">
+                                    <div class="c-card-product__footer">
+                                        <div class="c-card-product-size">
+                                            <div class="c-card-product-size__item">Размер</div>
+                                            <div class="c-card-product-size__item">XXS XS S M L</div>
+                                        </div>
+                                        <div class="c-card-product__btns">
+                                            <a href="#" class="c-card-product__btn c-card-product__btn-more">Подробнее</a>
+                                            <a href="#" class="c-card-product__btn c-card-product__btn-basket">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                            </div>
+                        </li>
+                        <li class="catalog-list__item">
+                            <div class="c-card-product">
+                                <div class="c-card-product__img"><a href="#"><img src="./img/product-1.jpg" alt=""></a></div>
+                                <div class="c-card-product__body">
+                                    <div class="c-card-product__title"><a href="#">Guns and Roses</a></div>
+                                    <div class="c-card-product__grid">
+                                        <div class="c-card-product__type">Футболка</div>
+                                        <div class="c-card-product__price">4 345 руб.</div>
+                                    </div>
+                                </div>
+                                <div class="c-card-product-extra">
+                                    <div class="c-card-product__footer">
+                                        <div class="c-card-product-size">
+                                            <div class="c-card-product-size__item">Размер</div>
+                                            <div class="c-card-product-size__item">XXS XS S M L</div>
+                                        </div>
+                                        <div class="c-card-product__btns">
+                                            <a href="#" class="c-card-product__btn c-card-product__btn-more">Подробнее</a>
+                                            <a href="#" class="c-card-product__btn c-card-product__btn-basket">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                            </div>
+                        </li>
                     </ul>
+                    <div class="c-show-more">
+                        <a href="#" class="c-show-more__btn">Больше товаров</a>
+                    </div>
+                    <div class="c-pagination">
+                        <a href="#" class="c-pagination-nav c-pagination-nav__left"></a>
+                        <a href="#" class="c-pagination__item active">1</a>
+                        <a href="#" class="c-pagination__item">2</a>
+                        <a href="#" class="c-pagination__item">3</a>
+                        <a href="#" class="c-pagination__item">4</a>
+                        <a href="#" class="c-pagination__item">5</a>
+                        <span class="c-pagination__item">...</span>
+                        <a href="#" class="c-pagination__item">18</a>
+                        <a href="#" class="c-pagination-nav c-pagination-nav__right"></a>
+                    </div>
+                </div>
+            </div>
+            <!--END catalog-->
+            
+            <div class="sale">
+                <h2 class="c-h2-title">Распродажа</h2>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <!--c-card-product-->
+                            <div class="c-card-product">
+                                <div class="c-card-product__img"><a href="#"><img src="./img/product-1.jpg" alt=""></a></div>
+                                <div class="c-card-product__body">
+                                    <div class="c-card-product__title"><a href="#">Guns and Roses</a></div>
+                                    <div class="c-card-product__grid">
+                                        <div class="c-card-product__type">Футболка</div>
+                                        <div class="c-card-product__price">4 345 руб.</div>
+                                    </div>
+                                </div>
+                                <div class="c-card-product-extra">
+                                    <div class="c-card-product__footer">
+                                        <div class="c-card-product-size">
+                                            <div class="c-card-product-size__item">Размер</div>
+                                            <div class="c-card-product-size__item">XXS XS S M L</div>
+                                        </div>
+                                        <div class="c-card-product__btns">
+                                            <a href="#" class="c-card-product__btn c-card-product__btn-more">Подробнее</a>
+                                            <a href="#" class="c-card-product__btn c-card-product__btn-basket">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--END c-card-product-->
+                        </div>
+                        <div class="swiper-slide">
+                            <!--c-card-product-->
+                            <div class="c-card-product">
+                                <div class="c-card-product__img"><a href="#"><img src="./img/product-1.jpg" alt=""></a></div>
+                                <div class="c-card-product__body">
+                                    <div class="c-card-product__title"><a href="#">Guns and Roses</a></div>
+                                    <div class="c-card-product__grid">
+                                        <div class="c-card-product__type">Футболка</div>
+                                        <div class="c-card-product__price">4 345 руб.</div>
+                                    </div>
+                                </div>
+                                <div class="c-card-product-extra">
+                                    <div class="c-card-product__footer">
+                                        <div class="c-card-product-size">
+                                            <div class="c-card-product-size__item">Размер</div>
+                                            <div class="c-card-product-size__item">XXS XS S M L</div>
+                                        </div>
+                                        <div class="c-card-product__btns">
+                                            <a href="#" class="c-card-product__btn c-card-product__btn-more">Подробнее</a>
+                                            <a href="#" class="c-card-product__btn c-card-product__btn-basket">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--END c-card-product-->
+                        </div>
+                        <div class="swiper-slide">
+                            <!--c-card-product-->
+                            <div class="c-card-product">
+                                <div class="c-card-product__img"><a href="#"><img src="./img/product-1.jpg" alt=""></a></div>
+                                <div class="c-card-product__body">
+                                    <div class="c-card-product__title"><a href="#">Guns and Roses</a></div>
+                                    <div class="c-card-product__grid">
+                                        <div class="c-card-product__type">Футболка</div>
+                                        <div class="c-card-product__price">4 345 руб.</div>
+                                    </div>
+                                </div>
+                                <div class="c-card-product-extra">
+                                    <div class="c-card-product__footer">
+                                        <div class="c-card-product-size">
+                                            <div class="c-card-product-size__item">Размер</div>
+                                            <div class="c-card-product-size__item">XXS XS S M L</div>
+                                        </div>
+                                        <div class="c-card-product__btns">
+                                            <a href="#" class="c-card-product__btn c-card-product__btn-more">Подробнее</a>
+                                            <a href="#" class="c-card-product__btn c-card-product__btn-basket">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--END c-card-product-->
+                        </div>
+                        <div class="swiper-slide">
+                            <!--c-card-product-->
+                            <div class="c-card-product">
+                                <div class="c-card-product__img"><a href="#"><img src="./img/product-1.jpg" alt=""></a></div>
+                                <div class="c-card-product__body">
+                                    <div class="c-card-product__title"><a href="#">Guns and Roses</a></div>
+                                    <div class="c-card-product__grid">
+                                        <div class="c-card-product__type">Футболка</div>
+                                        <div class="c-card-product__price">4 345 руб.</div>
+                                    </div>
+                                </div>
+                                <div class="c-card-product-extra">
+                                    <div class="c-card-product__footer">
+                                        <div class="c-card-product-size">
+                                            <div class="c-card-product-size__item">Размер</div>
+                                            <div class="c-card-product-size__item">XXS XS S M L</div>
+                                        </div>
+                                        <div class="c-card-product__btns">
+                                            <a href="#" class="c-card-product__btn c-card-product__btn-more">Подробнее</a>
+                                            <a href="#" class="c-card-product__btn c-card-product__btn-basket">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--END c-card-product-->
+                        </div>
+                        <div class="swiper-slide">
+                            <!--c-card-product-->
+                            <div class="c-card-product">
+                                <div class="c-card-product__img"><a href="#"><img src="./img/product-1.jpg" alt=""></a></div>
+                                <div class="c-card-product__body">
+                                    <div class="c-card-product__title"><a href="#">Guns and Roses</a></div>
+                                    <div class="c-card-product__grid">
+                                        <div class="c-card-product__type">Футболка</div>
+                                        <div class="c-card-product__price">4 345 руб.</div>
+                                    </div>
+                                </div>
+                                <div class="c-card-product-extra">
+                                    <div class="c-card-product__footer">
+                                        <div class="c-card-product-size">
+                                            <div class="c-card-product-size__item">Размер</div>
+                                            <div class="c-card-product-size__item">XXS XS S M L</div>
+                                        </div>
+                                        <div class="c-card-product__btns">
+                                            <a href="#" class="c-card-product__btn c-card-product__btn-more">Подробнее</a>
+                                            <a href="#" class="c-card-product__btn c-card-product__btn-basket">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--END c-card-product-->
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <div class="c-show-more">
+                    <a href="#" class="c-show-more__btn">Больше товаров</a>
+                </div>
+            </div>
+
+        </div>
+            
+        <div class="sale-banner">
+            <div class="c-layout">
+                
+                <div class="sale-banner__body">
+                    <h3 class="sale-banner__title">Коллекция для ночной жизни</h3>
+                    <div class="sale-banner__text">Будь в свете! Изображения светятся в темноте</div>
+                    <a href="#" class="sale-banner__btn">Подробнее</a>
+                    <img class="sale-banner__people" src="./img/sale-banner-girl.png" alt="">
+                </div>
+            </div>
+            
+        </div>
+    
+        <div class="c-layout">
+            <div class="new">
+                <h2 class="c-h2-title">Новинки</h2>
+                <div class="c-subtitle">Последние поступления</div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <!--c-card-product-->
+                            <div class="c-card-product">
+                                <div class="c-card-product__img"><a href="#"><img src="./img/product-1.jpg" alt=""></a></div>
+                                <div class="c-card-product__body">
+                                    <div class="c-card-product__title"><a href="#">Guns and Roses</a></div>
+                                    <div class="c-card-product__grid">
+                                        <div class="c-card-product__type">Футболка</div>
+                                        <div class="c-card-product__price">4 345 руб.</div>
+                                    </div>
+                                </div>
+                                <div class="c-card-product-extra">
+                                    <div class="c-card-product__footer">
+                                        <div class="c-card-product-size">
+                                            <div class="c-card-product-size__item">Размер</div>
+                                            <div class="c-card-product-size__item">XXS XS S M L</div>
+                                        </div>
+                                        <div class="c-card-product__btns">
+                                            <a href="#" class="c-card-product__btn c-card-product__btn-more">Подробнее</a>
+                                            <a href="#" class="c-card-product__btn c-card-product__btn-basket">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--END c-card-product-->
+                        </div>
+                        <div class="swiper-slide">
+                            <!--c-card-product-->
+                            <div class="c-card-product">
+                                <div class="c-card-product__img"><a href="#"><img src="./img/product-1.jpg" alt=""></a></div>
+                                <div class="c-card-product__body">
+                                    <div class="c-card-product__title"><a href="#">Guns and Roses</a></div>
+                                    <div class="c-card-product__grid">
+                                        <div class="c-card-product__type">Футболка</div>
+                                        <div class="c-card-product__price">4 345 руб.</div>
+                                    </div>
+                                </div>
+                                <div class="c-card-product-extra">
+                                    <div class="c-card-product__footer">
+                                        <div class="c-card-product-size">
+                                            <div class="c-card-product-size__item">Размер</div>
+                                            <div class="c-card-product-size__item">XXS XS S M L</div>
+                                        </div>
+                                        <div class="c-card-product__btns">
+                                            <a href="#" class="c-card-product__btn c-card-product__btn-more">Подробнее</a>
+                                            <a href="#" class="c-card-product__btn c-card-product__btn-basket">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--END c-card-product-->
+                        </div>
+                        <div class="swiper-slide">
+                            <!--c-card-product-->
+                            <div class="c-card-product">
+                                <div class="c-card-product__img"><a href="#"><img src="./img/product-1.jpg" alt=""></a></div>
+                                <div class="c-card-product__body">
+                                    <div class="c-card-product__title"><a href="#">Guns and Roses</a></div>
+                                    <div class="c-card-product__grid">
+                                        <div class="c-card-product__type">Футболка</div>
+                                        <div class="c-card-product__price">4 345 руб.</div>
+                                    </div>
+                                </div>
+                                <div class="c-card-product-extra">
+                                    <div class="c-card-product__footer">
+                                        <div class="c-card-product-size">
+                                            <div class="c-card-product-size__item">Размер</div>
+                                            <div class="c-card-product-size__item">XXS XS S M L</div>
+                                        </div>
+                                        <div class="c-card-product__btns">
+                                            <a href="#" class="c-card-product__btn c-card-product__btn-more">Подробнее</a>
+                                            <a href="#" class="c-card-product__btn c-card-product__btn-basket">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--END c-card-product-->
+                        </div>
+                        <div class="swiper-slide">
+                            <!--c-card-product-->
+                            <div class="c-card-product">
+                                <div class="c-card-product__img"><a href="#"><img src="./img/product-1.jpg" alt=""></a></div>
+                                <div class="c-card-product__body">
+                                    <div class="c-card-product__title"><a href="#">Guns and Roses</a></div>
+                                    <div class="c-card-product__grid">
+                                        <div class="c-card-product__type">Футболка</div>
+                                        <div class="c-card-product__price">4 345 руб.</div>
+                                    </div>
+                                </div>
+                                <div class="c-card-product-extra">
+                                    <div class="c-card-product__footer">
+                                        <div class="c-card-product-size">
+                                            <div class="c-card-product-size__item">Размер</div>
+                                            <div class="c-card-product-size__item">XXS XS S M L</div>
+                                        </div>
+                                        <div class="c-card-product__btns">
+                                            <a href="#" class="c-card-product__btn c-card-product__btn-more">Подробнее</a>
+                                            <a href="#" class="c-card-product__btn c-card-product__btn-basket">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--END c-card-product-->
+                        </div>
+                        <div class="swiper-slide">
+                            <!--c-card-product-->
+                            <div class="c-card-product">
+                                <div class="c-card-product__img"><a href="#"><img src="./img/product-1.jpg" alt=""></a></div>
+                                <div class="c-card-product__body">
+                                    <div class="c-card-product__title"><a href="#">Guns and Roses</a></div>
+                                    <div class="c-card-product__grid">
+                                        <div class="c-card-product__type">Футболка</div>
+                                        <div class="c-card-product__price">4 345 руб.</div>
+                                    </div>
+                                </div>
+                                <div class="c-card-product-extra">
+                                    <div class="c-card-product__footer">
+                                        <div class="c-card-product-size">
+                                            <div class="c-card-product-size__item">Размер</div>
+                                            <div class="c-card-product-size__item">XXS XS S M L</div>
+                                        </div>
+                                        <div class="c-card-product__btns">
+                                            <a href="#" class="c-card-product__btn c-card-product__btn-more">Подробнее</a>
+                                            <a href="#" class="c-card-product__btn c-card-product__btn-basket">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--END c-card-product-->
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
             </div>
         </div>
@@ -397,6 +836,7 @@
 
 <script src="./js/jquery.min.js"></script>
 <script src="./js/sumoselect/jquery.sumoselect.min.js"></script>
+<script src="./js/swiper/swiper.min.js"></script>
 <script src="./js/main.js"></script>
 
 </body>
