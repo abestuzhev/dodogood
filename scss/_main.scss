@@ -3,12 +3,49 @@ main {
 }
 
 .catalog {
+
+    .c-h1-title {
+        margin-left: 25%;
+    }
+
     &-nav {
         float: left;
+        width: 25%;
+
+        &__title {
+            font-family: Akrobat, sans-serif;
+            color: #141414;
+            font-size: 18px;
+            line-height: 1;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        &__list {
+            margin-bottom: 24px;
+        }
+
+        &__item {
+            a {
+                display: block;
+                font-size: 14px;
+                padding: 4px 0;
+                color: #333232;
+                text-decoration: none;
+                transition: all .1s ease-in-out;
+
+                &:hover {
+                    color: #ff0909;
+                    transition: all .1s ease-in-out;
+                }
+            }
+        }
     }
 
     &-body {
-        margin-left: 290px;
+        //margin-left: 290px;
+        float: right;
+        width: 75%;
         &::after {
             content: '';
             clear: both;
@@ -17,6 +54,23 @@ main {
     }
 
     &-filter {
+        padding: 10px 0;
+        &::after {
+            content: '';
+            clear: both;
+            display: table;
+        }
+
+        &__title {
+            float: left;
+            font-size: 16px;
+            color: #333232;
+            margin-right: 10px;
+        }
+
+        &__item {
+            float: left;
+        }
     }
 
     &-list {

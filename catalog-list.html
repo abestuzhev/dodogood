@@ -12,6 +12,7 @@
     <link type="text/css" href="./css/style.css" rel="stylesheet">
     <link type="text/css" href="./css/media.css" rel="stylesheet">
     <link type="text/css" href="./js/sumoselect/sumoselect.css" rel="stylesheet" media="all"/>
+    <link type="text/css" href="./fonts/font.css" rel="stylesheet" media="all"/>
     
     
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
@@ -77,10 +78,18 @@
                         <div class="header-operation">
                             <div class="header-operation__item">
                                 <div class="header-search">
-                                    <input type="search" name="header_search">
+    
+                                    <div class="header-search__icon">
+                                        <svg class="c-symbol symbol-search"><use xlink:href="#symbol-search" /></svg>
+                                    </div>
+                                    <form action="" class="header-search__form">
+                                        <input type="search" name="header_search" class="header-search__input">
+                                    </form>
+                                    
                                 </div>
                             </div>
                             <div class="header-operation__item">
+                                <svg class="c-symbol symbol-basket"><use xlink:href="#symbol-basket" /></svg>
                                 <a href="#" class="header-basket">Корзина пуста</a>
                             </div>
                         </div>
@@ -169,6 +178,7 @@
             </nav>
             
             <div class="catalog">
+                <h1 class="c-h1-title">Мужская одежда</h1>
                 <div class="catalog-nav">
                     <div class="catalog-nav__title">Футболки</div>
                     <ul class="catalog-nav__list">
@@ -176,10 +186,52 @@
                         <li class="catalog-nav__item"><a href="#">Длинный рукав</a></li>
                         <li class="catalog-nav__item"><a href="#">Клубные</a></li>
                     </ul>
+                    <div class="catalog-nav__other">
+                        <ul class="catalog-nav__list">
+                            <li class="catalog-nav__item"><a href="#">Водолазки</a></li>
+                            <li class="catalog-nav__item"><a href="#">Куртки</a></li>
+                            <li class="catalog-nav__item"><a href="#">Ветровки</a></li>
+                        </ul>
+                        <ul class="catalog-nav__list">
+                            <li class="catalog-nav__item"><a href="#">Поло</a></li>
+                            <li class="catalog-nav__item"><a href="#">Майки</a></li>
+                            <li class="catalog-nav__item"><a href="#">Толстовки</a></li>
+                        </ul>
+                        <ul class="catalog-nav__list">
+                            <li class="catalog-nav__item"><a href="#">Жилеты</a></li>
+                            <li class="catalog-nav__item"><a href="#">Анораки</a></li>
+                            <li class="catalog-nav__item"><a href="#">Брюки</a></li>
+                        </ul>
+                        <ul class="catalog-nav__list">
+                            <li class="catalog-nav__item"><a href="#">Спортивный стиль</a></li>
+                            <li class="catalog-nav__item"><a href="#">Шорты</a></li>
+                        </ul>
+                    </div>
+                    
                 </div>
                 <div class="catalog-body">
                     <div class="catalog-filter">
-                        <div class="catalog-filter__item"></div>
+                        <form action="" name="filter-form">
+                            <div class="catalog-filter__title">Фильтровать по:</div>
+                            <div class="catalog-filter__item">
+                                <div class="c-card-filter">
+                                    <div class="c-card-filter__title">Цена</div>
+                                    <div class="c-card-filter__body">
+                                        <ul class="c-card-filter__list">
+                                            <li class="c-card-filter__item">
+                                                <input type="radio" name="filter-price" id="filter-price-roz" class="c-input-radio">
+                                                <label for="filter-price-roz" class="c-label-radio">Розничная цена</label>
+                                            </li>
+                                            <li class="c-card-filter__item">
+                                                <input type="radio" name="filter-price" id="filter-price-opt" class="c-input-radio">
+                                                <label for="filter-price-opt" class="c-label-radio">Розничная цена</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        
                     </div>
                     <ul class="catalog-list">
                         <li class="catalog-list__item">
@@ -211,7 +263,7 @@
                             <div class="c-card-product">
                                 <div class="c-card-product__img"><a href="#"><img src="./img/product-1.jpg" alt=""></a></div>
                                 <div class="c-card-product__body">
-                                    <div class="c-card-product__title"><a href="#">Guns and Roses</a></div>
+                                    <div class="c-card-product__title"><a href="#">Guns and Roses в несколько строк</a></div>
                                     <div class="c-card-product__grid">
                                         <div class="c-card-product__type">Футболка</div>
                                         <div class="c-card-product__price">4 345 руб.</div>
@@ -332,9 +384,20 @@
     </div>
 </footer>
 
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="symbol-search" viewBox="">
+    
+    </symbol>
+    
+    <symbol id="symbol-basket" viewBox="">
+    
+    </symbol>
+</svg>
+
 
 <script src="./js/jquery.min.js"></script>
 <script src="./js/sumoselect/jquery.sumoselect.min.js"></script>
+<script src="./js/main.js"></script>
 
 </body>
 </html>

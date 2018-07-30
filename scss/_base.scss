@@ -18,7 +18,17 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.wrapper a {
+    transition: all .1s ease-in-out;
+
+    &:hover {
+        color: #ff0909;
+        transition: all .1s ease-in-out;
+    }
+}
+
 .wrapper {
+    font-family: sans-serif;
     position: relative;
     min-height: 100%;
     height: auto !important;
@@ -30,6 +40,15 @@ body {
         display: block;
         height: 290px;
     }
+}
+
+.c-h1-title {
+    font-family: Akrobat, sans-serif;
+    font-size: 50px;
+    color: #141414;
+    line-height: 1;
+    margin-bottom: 20px;
+    font-weight: 600;
 }
 
 .c-breadcrumb {
@@ -206,7 +225,7 @@ body {
         text-align: center;
         float: left;
         width: 50%;
-        padding: 6px;
+        padding: 10px 6px;
         font-size: 16px;
         text-decoration: none;
 
@@ -220,4 +239,82 @@ body {
             background-color: #121214;
         }
     }
+}
+
+.c-input-radio {
+    display: none;
+
+    &:checked + .c-label-radio:after {
+        content: '';
+        position: absolute;
+        bottom: .2em;
+        left: .2em;
+        width: .7em;
+        height: .7em;
+        border-radius: 3px;
+        background-color: #ff9f00;
+    }
+}
+
+.c-label-radio {
+    display: inline-block;
+    font-family: Akrobat;
+    font-size: 19px;
+    font-weight: 400;
+    color: #4a4a4a;
+    position: relative;
+    padding-left: 1.5em;
+    line-height: 1;
+    cursor: pointer;
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 1.11em;
+        height: 1.11em;
+        border-radius: 5px;
+        border: solid 1px #c6c6c6;
+    }
+}
+
+.c-card-filter {
+    position: relative;
+    &__title {
+        cursor: pointer;
+    }
+
+    &__body {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+    &__body.active {
+        display: block;
+    }
+}
+
+
+/*иконки*/
+.c-symbol {
+    display: inline-block;
+    vertical-align: middle;
+    fill: #000;
+}
+
+.symbol-search {
+    font-size: 16px;
+    width: 1em;
+    height: 1em;
+}
+
+.symbol-basket {
+    font-size: 23px;
+    width: 1em;
+    height: 1.3em;
 }
