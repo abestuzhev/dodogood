@@ -209,6 +209,22 @@
                         </ul>
                     </div>
                     
+                    <div class="catalog-nav-filter">
+                        <div class="catalog-nav-filter__item">
+                            <div class="range-slider">
+                                <div class="formCost">
+                                    <label for="minCost-price">от</label>
+                                    <input type="text" class="form__input" id="minCost-price" value="0"/>
+                                    <label for="maxCost-price">до</label>
+                                    <input type="text" class="form__input" id="maxCost-price" value="99999"/>
+                                </div>
+                                <div class="sliderCont">
+                                    <div class="range-slider_default" id="slider-price"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
                 <div class="catalog-body">
                     <div class="catalog-filter">
@@ -823,20 +839,22 @@
     </div>
 </footer>
 
-<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-    <symbol id="symbol-search" viewBox="">
-    
-    </symbol>
-    
-    <symbol id="symbol-basket" viewBox="">
-    
-    </symbol>
-</svg>
+<!--<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">-->
+    <!--<symbol id="symbol-search" viewBox="">-->
+    <!---->
+    <!--</symbol>-->
+    <!---->
+    <!--<symbol id="symbol-basket" viewBox="">-->
+    <!---->
+    <!--</symbol>-->
+<!--</svg>-->
 
 
 <script src="./js/jquery.min.js"></script>
 <script src="./js/sumoselect/jquery.sumoselect.min.js"></script>
 <script src="./js/swiper/swiper.min.js"></script>
+<script src="./js/jquery-ui.min.js"></script>
+<script src="./js/range-slider.js"></script>
 <script src="./js/main.js"></script>
 
 </body>

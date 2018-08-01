@@ -19,6 +19,7 @@ main {
     &-nav {
         float: left;
         width: 25%;
+        padding-right: 3%;
 
         &__title {
             font-family: Akrobat, sans-serif;
@@ -46,6 +47,16 @@ main {
                     color: #ff0909;
                     transition: all .1s ease-in-out;
                 }
+            }
+        }
+
+        &-filter {
+            background-color: #fff;
+            border-radius: 6px;
+            padding: 14px;
+
+            &__item {
+                margin-bottom: 10px;
             }
         }
     }

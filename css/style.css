@@ -706,7 +706,8 @@ main {
 
 .catalog-nav {
   float: left;
-  width: 25%; }
+  width: 25%;
+  padding-right: 3%; }
   .catalog-nav__title {
     font-family: Akrobat, sans-serif;
     color: #141414;
@@ -730,6 +731,12 @@ main {
       -webkit-transition: all .1s ease-in-out;
       -o-transition: all .1s ease-in-out;
       transition: all .1s ease-in-out; }
+  .catalog-nav-filter {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 14px; }
+    .catalog-nav-filter__item {
+      margin-bottom: 10px; }
 
 .catalog-body {
   float: right;
