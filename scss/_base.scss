@@ -59,6 +59,25 @@ body {
     text-align: center;
 }
 
+.c-select {
+    display: inline-block;
+    &-layout {
+        display: inline-block;
+        position: relative;
+
+        .c-select-icon {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 10px;
+        }
+    }
+}
+
+.SumoSelect > .CaptionCont > label > i {
+    background: none !important;
+}
+
 .c-breadcrumb {
     padding: 30px 0;
 
@@ -125,6 +144,11 @@ body {
         position: relative;
         min-height: 282px;
         overflow: hidden;
+
+        a {
+            display: block;
+            text-align: center;
+        }
     }
 
     &__body {
@@ -330,6 +354,15 @@ body {
         cursor: pointer;
     }
 
+    &__icon {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .symbol-arrow-up, .symbol-arrow-down {
+        font-size: 13px;
+    }
+
     &.active {
         .c-card-filter__body {
             display: block;
@@ -430,4 +463,106 @@ body {
     font-size: 23px;
     width: 1em;
     height: 1.3em;
+}
+
+
+
+/* Ширина слайдера */
+.range-slider {
+    padding-bottom: 8px;
+}
+.range-slider .formCost::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.range-slider input {
+    //display: inline-block;
+    float: left;
+    width: 42%;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    padding: 8px 10px;
+}
+
+.range-slider span {
+    float: left;
+    padding: 0 5px;
+    line-height: 33px
+}
+.range-slider label {
+    vertical-align: middle; 
+}
+.range-slider_default {
+    width: 92%;
+}
+.formCost {
+    margin-bottom: 20px;
+}
+/* Контейнер слайдера */
+.ui-slider {
+    position: relative;
+}
+/* Ползунок */
+.ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 18px;
+    /* Задаем нужную ширину */
+    height: 18px;
+    /* и высоту */
+    border-radius: 20px;
+    background-color: #fff;
+    border: 1px solid #d1d2d2;
+    color: #d1d2d2;
+    cursor: pointer;
+}
+.ui-slider .ui-slider-handle:focus {
+    border: 1px solid #d1d2d2;
+    outline: none;
+    }
+    .ui-slider .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    font-size: .7em;
+    display: block;
+    border: 0;
+    overflow: hidden;
+}
+/* горизонтальный слайдер (сама полоса по которой бегает ползунок) */
+.ui-slider-horizontal {
+    height: 3px;
+/* задаем высоту согласно дизайна */
+}
+/* позиционируем ползунки */
+.ui-slider-horizontal .ui-slider-handle {
+    top: -7px;
+    margin-left: -6px;
+}
+.ui-slider-horizontal .ui-slider-range {
+    top: 0;
+    height: 4px;
+}
+.ui-slider-horizontal .ui-slider-range-min {
+    left: 0;
+}
+.ui-slider-horizontal .ui-slider-range-max {
+    right: 0;
+}
+/* оформление полосы по которой ходит ползунок */
+.ui-widget-content {
+    background-color: #cdd2d9;
+}
+/* оформление активного участка (между двумя ползунками) */
+.ui-widget-header {
+    background: #ff9f00;
+}
+/* скругление для полосы слайдера */
+.ui-corner-all {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
 }

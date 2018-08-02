@@ -73,7 +73,7 @@ main {
     }
 
     &-filter {
-        padding: 10px 0;
+        padding: 10px 0 0;
         &::after {
             content: '';
             clear: both;
@@ -90,10 +90,21 @@ main {
         &__item {
             float: left;
             margin-right: 30px;
+            margin-bottom: 10px;
 
             &:last-child {
                 margin-right: 0;
             }
+        }
+
+        select {
+            height: 26px;
+            width: 200px;
+            font-size: 16px;
+        }
+
+        .c-select-layout {
+            top: -4px;
         }
 
         .SumoSelect {
@@ -101,11 +112,11 @@ main {
         }
 
         .SumoSelect p {
-            padding: 0;
+            padding: 3px 5px;
         }
 
         .SumoSelect > .CaptionCont {
-            border: none;
+            border-color: #ccc;
             background-color: transparent;
         }
 
