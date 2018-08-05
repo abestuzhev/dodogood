@@ -66,6 +66,8 @@
                             <a href="#" class="header-login__item header-login__entry">Вход</a>
                             <a href="#" class="header-login__item header-login__reg">Регистрация</a>
                         </div>
+
+                        <a href="#" class="header-menu__mobile"></a>
                     </li>
                     <li class="header-col header-col__center">
                         <a href="/" class="header-logo">
@@ -89,11 +91,9 @@
                                 </div>
                             </div>
                             <div class="header-operation__item">
-                                <a href="#" class="header-basket">Корзина пуста</a>
+                                <a href="#" class="header-basket"><span>Корзина пуста</span></a>
                             </div>
                         </div>
-                        
-                        
                     </li>
                 </ul>
             </div>
@@ -156,8 +156,117 @@
                 </li>
             </ul>
         </div>
+
+
+        <div class="header-operation-mobile">
+            <div class="header-operation-mobile__item">
+                <div class="header-search-mobile"><input type="text" placeholder="Поиск товаров"></div>
+            </div>
+            <div class="header-operation-mobile__item">
+                <a href="#" class="header-filter-mobile"></a>
+            </div>
+
+        </div>
         
     </header>
+
+
+    <div class="sidebar">
+        <div class="navigation">
+            <div class="navigation-header">
+                <div class="navigation-header__left">
+                    <a href="#" class="navigation-close"></a>
+                </div>
+                <div class="navigation-header__center">
+                    <a href="#" class="navigation-logo"><img src="./img/logo-mobile-white.png" alt=""></a>
+                </div>
+                <div class="navigation-header__right">
+                    <a href="#" class="navigation-basket"></a>
+                </div>
+
+            </div>
+            <div class="navigation-body">
+                <div class="navigation-login">
+                    <a href="#" class="navigation-login__item navigation-login__entry">Вход</a>
+                    <a href="#" class="navigation-login__item navigation-login__reg">Регистрация</a>
+                </div>
+
+                <div class="navigation-catalog">
+                    <div class="navigation-catalog__title">Каталог</div>
+                    <ul class="navigation-catalog__list">
+                        <li class="navigation-catalog__item">
+                            <a href="#" class="navigation-catalog__link">Мужская одежда</a>
+                            <ul class="navigation-subcatalog__list">
+                                <li class="navigation-subcatalog__item">
+                                    <a href="#" class="navigation-subcatalog__link">Футболки</a>
+                                </li>
+                                <li class="navigation-subcatalog__item">
+                                    <a href="#" class="navigation-subcatalog__link">Поло</a>
+                                </li>
+                                <li class="navigation-subcatalog__item">
+                                    <a href="#" class="navigation-subcatalog__link">Майки</a>
+                                </li>
+                                <li class="navigation-subcatalog__item">
+                                    <a href="#" class="navigation-subcatalog__link">Толстовки</a>
+                                </li>
+                                <li class="navigation-subcatalog__item">
+                                    <a href="#" class="navigation-subcatalog__link">Водолазки</a>
+                                </li>
+                                <li class="navigation-subcatalog__item">
+                                    <a href="#" class="navigation-subcatalog__link">Куртки</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navigation-catalog__item">
+                            <a href="#" class="navigation-catalog__link">Женская одежда</a>
+                        </li>
+                        <li class="navigation-catalog__item">
+                            <a href="#" class="navigation-catalog__link">Детская одежда</a>
+                            <ul class="navigation-subcatalog__list">
+                                <li class="navigation-subcatalog__item">
+                                    <a href="#" class="navigation-subcatalog__link">Футболки</a>
+                                </li>
+                                <li class="navigation-subcatalog__item">
+                                    <a href="#" class="navigation-subcatalog__link">Поло</a>
+                                </li>
+                                <li class="navigation-subcatalog__item">
+                                    <a href="#" class="navigation-subcatalog__link">Майки</a>
+                                </li>
+                                <li class="navigation-subcatalog__item">
+                                    <a href="#" class="navigation-subcatalog__link">Толстовки</a>
+                                </li>
+                                <li class="navigation-subcatalog__item">
+                                    <a href="#" class="navigation-subcatalog__link">Водолазки</a>
+                                </li>
+                                <li class="navigation-subcatalog__item">
+                                    <a href="#" class="navigation-subcatalog__link">Куртки</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navigation-catalog__item">
+                            <a href="#" class="navigation-catalog__link">Большие размеры</a>
+                        </li>
+                        <li class="navigation-catalog__item">
+                            <a href="#" class="navigation-catalog__link">Новинки</a>
+                        </li>
+                        <li class="navigation-catalog__item">
+                            <a href="#" class="navigation-catalog__link sale">SALE</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <ul class="navigation-menu">
+                    <li class="navigation-menu__item"><a href="#">О компании</a></li>
+                    <li class="navigation-menu__item"><a href="#">Оплата и доставка</a></li>
+                    <li class="navigation-menu__item"><a href="#">Партнерам</a></li>
+                    <li class="navigation-menu__item"><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class="sidebar-bg"></div>
     <main>
         <div class="c-layout">
             <nav class="c-breadcrumb">
@@ -864,13 +973,13 @@
 </footer>
 
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-    <symbol id="symbol-search" viewBox="">
+    <!--<symbol id="symbol-search" viewBox="">-->
 
-    </symbol>
+    <!--</symbol>-->
 
-    <symbol id="symbol-basket" viewBox="">
+    <!--<symbol id="symbol-basket" viewBox="">-->
 
-    </symbol>
+    <!--</symbol>-->
 
     <symbol id="symbol-arrow-left" viewBox="0 0 21 35">
         <path d="M18.677 34.552a1.56 1.56 0 0 1-1.062-.406L.44 18.257a1.315 1.315 0 0 1 0-1.962L17.615.407a1.588 1.588 0 0 1 2.123 0c.584.542.584 1.42 0 1.961L3.62 17.276l16.117 14.907c.584.542.584 1.42 0 1.963a1.56 1.56 0 0 1-1.061.406"/>
