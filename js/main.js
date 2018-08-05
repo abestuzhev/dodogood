@@ -95,14 +95,17 @@ $(function(){
         e.preventDefault();
         $('.sidebar').addClass('is-show');
         $('.sidebar-bg').addClass('is-show');
-
     });
 
     $('.navigation-close').on('click', function(e){
         e.preventDefault();
         $('.sidebar').removeClass('is-show');
         $('.sidebar-bg').removeClass('is-show');
+    });
 
+    $('.header-filter-mobile').on('click', function(e){
+        e.preventDefault();
+        $('.catalog-filter-mobile').toggleClass('is-show');
     });
 
 

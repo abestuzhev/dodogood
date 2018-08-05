@@ -688,8 +688,6 @@ body {
     .header-operation-mobile {
       display: none;
       background-color: #ececec;
-      -webkit-box-shadow: 0 6px 10px 0 rgba(122, 122, 122, 0.5);
-              box-shadow: 0 6px 10px 0 rgba(122, 122, 122, 0.5);
       padding: 10px 13px;
       position: relative; }
       .header-operation-mobile::after {
@@ -1160,6 +1158,46 @@ main {
     background-color: transparent; }
   .catalog-filter .SumoSelect.open > .optWrapper {
     top: 23px; }
+  .catalog-filter-mobile {
+    position: absolute;
+    top: 100%;
+    margin-top: 1px;
+    left: 10px;
+    right: 10px;
+    background-color: #fff;
+    padding: 34px 20px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out; }
+    .catalog-filter-mobile.is-show {
+      z-index: 998;
+      opacity: 1;
+      visibility: visible;
+      -webkit-transition: all .2s ease-in-out;
+      -o-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out; }
+    .catalog-filter-mobile::before {
+      content: '';
+      position: absolute;
+      top: -23px;
+      right: 6px;
+      border: 12px solid transparent;
+      border-bottom: 12px solid #fff; }
+    .catalog-filter-mobile__title {
+      padding: 8px 0;
+      border-top: 1px solid #c6c6c6;
+      border-bottom: 1px solid #c6c6c6;
+      font-size: 20px;
+      font-family: Akrobat, sans-serif;
+      color: #121212; }
+    .catalog-filter-mobile__body {
+      padding: 10px 0; }
 
 .catalog-list {
   margin-left: -14px;
