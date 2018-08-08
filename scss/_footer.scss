@@ -24,7 +24,7 @@
         }
         
         &:nth-child(2) {
-            width: 43%;
+            width: 30%;
             padding: 24px 0;
         }
         
@@ -48,6 +48,7 @@
     }
 
     &-menu {
+        font-family: Akrobat, sans-serif;
 
         &__item {
             margin-bottom: 14px;
@@ -63,6 +64,7 @@
     }
 
     &-social {
+        font-family: Akrobat, sans-serif;
         margin-bottom: 24px;
         &__title {
             display: inline-block;
@@ -79,6 +81,7 @@
     }
 
     &-contact {
+        font-family: Akrobat, sans-serif;
         &__title {
             font-size: 18px;
             color: #ccc;
