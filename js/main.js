@@ -127,4 +127,14 @@ $(function(){
     });
 
 
+    /*простые табы*/
+    $(document).on('click', '.tabs-menu a', function(event) {
+        event.preventDefault();
+        $(this).parent().addClass("current");
+        $(this).parent().siblings().removeClass("current");
+        var tab = $(this).attr("href");
+        $(this).parents('.tabs-menu').parent().siblings('.tabs-content').find(".tabs-content__item").not(tab).css("display", "none");
+        $(tab).fadeIn();
+    });
+
 })

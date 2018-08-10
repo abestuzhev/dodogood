@@ -65,8 +65,8 @@ function rangeSlider(slide, minValue, maxValue, maxDefault){
 }
 
     rangeSlider('#slider-price', '#minCost-price', '#maxCost-price', 9999);
-    rangeSlider('#slider-power', '#minCost-power', '#maxCost-power', 10);
 
+    rangeSlider('.range-slider__price', '.range-slider__minCost-price', '.range-slider__maxCost-price', 9999);
 });
 
 

@@ -500,3 +500,102 @@ main {
         right: 0;
     }
 }
+
+.product-card {
+    font-family: Roboto, sans-serif;
+    margin-bottom: 40px;
+    &__body {
+        margin-bottom: 30px;
+
+
+        &::after {
+            content:'';
+            clear: both;
+            display: table;
+        }
+    }
+
+    &__footer {
+
+    }
+
+    &-slider {
+        width: 420px;
+        height: 630px;
+        border-radius: 3px;
+        border: solid 1px #d6d6d6;
+    }
+
+    &__img {
+        float: left;
+        width: 41%;
+        padding-right: 3%
+    }
+    &__about {
+        float: right;
+        width: 59%;
+    }
+
+    &__title {
+        font-size: 36px;
+        color: #3c3c3c;
+        font-weight: 900;
+    }
+
+    &__type {
+        color: #aeaeae;
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+
+    &-price {
+        font-size: 18px;
+        margin-bottom: 14px;
+
+        &__now {
+            display: inline-block;
+            vertical-align: middle;
+            font-weight: 900;
+            color: #3c3c3c;
+        }
+
+        &__old {
+            vertical-align: middle;
+            display: inline-block;
+            color: #aeaeae;
+        }
+    }
+
+    &__operation {
+        margin-bottom: 14px;
+    }
+
+    &__btn {
+
+    }
+
+    &-info {
+        font-family: Roboto, sans-serif;
+
+        &__title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        &__list {
+
+        }
+
+        &__item {
+            color: #000000;
+            font-size: 24px;
+
+            span {
+                font-size: 16px;
+                color: #aaaaaa;
+            }
+        }
+    }
+
+
+}

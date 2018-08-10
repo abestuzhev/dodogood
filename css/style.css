@@ -468,6 +468,24 @@ body {
     background-color: #000;
     padding: 24px 50px; }
 
+.c-btn {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: Roboto, sans-serif;
+  background-color: #000;
+  padding: 20px 90px; }
+  .c-btn-layout {
+    margin-bottom: 30px; }
+    .c-btn-layout__center {
+      text-align: center; }
+    .c-btn-layout__left {
+      text-align: left; }
+    .c-btn-layout__right {
+      text-align: right; }
+
 .c-pagination {
   text-align: center;
   padding: 30px 0;
@@ -600,6 +618,27 @@ body {
 /* скругление для полосы слайдера */
 .ui-corner-all {
   border-radius: 4px; }
+
+/*tabs*/
+.tabs {
+  font-family: Roboto, sans-serif; }
+  .tabs-menu {
+    margin-left: -20px;
+    margin-bottom: 20px; }
+    .tabs-menu__item {
+      display: inline-block; }
+      .tabs-menu__item a {
+        display: block;
+        padding: 10px 20px;
+        color: #aeaeae;
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none; }
+      .tabs-menu__item.current a {
+        color: #3c3c3c; }
+  .tabs-content__item:nth-child(1) {
+    display: block; }
 
 .header {
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.09);
@@ -1259,3 +1298,58 @@ main {
     position: absolute;
     bottom: 0;
     right: 0; }
+
+.product-card {
+  font-family: Roboto, sans-serif;
+  margin-bottom: 40px; }
+  .product-card__body {
+    margin-bottom: 30px; }
+    .product-card__body::after {
+      content: '';
+      clear: both;
+      display: table; }
+  .product-card-slider {
+    width: 420px;
+    height: 630px;
+    border-radius: 3px;
+    border: solid 1px #d6d6d6; }
+  .product-card__img {
+    float: left;
+    width: 41%;
+    padding-right: 3%; }
+  .product-card__about {
+    float: right;
+    width: 59%; }
+  .product-card__title {
+    font-size: 36px;
+    color: #3c3c3c;
+    font-weight: 900; }
+  .product-card__type {
+    color: #aeaeae;
+    font-size: 14px;
+    margin-bottom: 24px; }
+  .product-card-price {
+    font-size: 18px;
+    margin-bottom: 14px; }
+    .product-card-price__now {
+      display: inline-block;
+      vertical-align: middle;
+      font-weight: 900;
+      color: #3c3c3c; }
+    .product-card-price__old {
+      vertical-align: middle;
+      display: inline-block;
+      color: #aeaeae; }
+  .product-card__operation {
+    margin-bottom: 14px; }
+  .product-card-info {
+    font-family: Roboto, sans-serif; }
+    .product-card-info__title {
+      font-size: 24px;
+      margin-bottom: 10px; }
+    .product-card-info__item {
+      color: #000000;
+      font-size: 24px; }
+      .product-card-info__item span {
+        font-size: 16px;
+        color: #aaaaaa; }
