@@ -1427,10 +1427,7 @@ main {
       clear: both;
       display: table; }
   .product-card-slider {
-    width: 420px;
-    height: 630px;
-    border-radius: 3px;
-    border: solid 1px #d6d6d6; }
+    width: 420px; }
   .product-card__img {
     float: left;
     width: 41%;

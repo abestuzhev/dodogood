@@ -31,7 +31,7 @@
 
             self.find('img').css({
                 width: '100%',
-                height: '100%'
+                height: 'auto'
             });
 
             // 宽放大倍数
