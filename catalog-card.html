@@ -15,6 +15,8 @@
     <link type="text/css" href="./js/swiper/swiper.css" rel="stylesheet" media="all"/>
     <link type="text/css" href="./fonts/font.css" rel="stylesheet" media="all"/>
 
+    <link type="text/css" rel="stylesheet" href="./js/productgallery/productgallery.css"/>
+
 
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
@@ -331,16 +333,126 @@
 
                 <div class="product-card__body">
                     <div class="product-card__img">
-                        <div class="product-card-slider"></div>
+                        <div class="product-card-slider">
+                            <div class="show" href="https://placeimg.com/1000/1000/animals">
+                                <img src="https://placeimg.com/1000/1000/animals" id="show-img">
+                            </div>
+                            <div class="small-img">
+                                <img src="./js/productgallery/online_icon_right@2x.png" class="icon-left" alt="" id="prev-img">
+                                <div class="small-container">
+                                    <div id="small-img-roll">
+                                        <img src="https://placeimg.com/1000/1000/animals" class="show-small-img" alt="">
+                                        <img src="https://placeimg.com/1000/1000/arch" class="show-small-img" alt="">
+                                        <img src="https://placeimg.com/1000/1000/nature" class="show-small-img" alt="">
+                                        <img src="https://placeimg.com/1000/1000/people" class="show-small-img" alt="">
+                                        <img src="https://placeimg.com/1000/1000/tech" class="show-small-img" alt="">
+                                        <img src="https://picsum.photos/1000/1000/?random" class="show-small-img" alt="">
+                                    </div>
+                                </div>
+                                <img src="./js/productgallery/online_icon_right@2x.png" class="icon-right" alt="" id="next-img">
+                            </div>
+                        </div>
                     </div>
                     <div class="product-card__about">
                         <div class="product-card__title">Britain flag</div>
                         <div class="product-card__type">Футболка</div>
                         <div class="product-card-price">
                             <div class="product-card-price__now">4 179 руб.</div>
-                            <div class="product-card-price__old">4 500 руб.</div>
+                            <div class="product-card-price__old">Оптовая цена</div>
                         </div>
                         <div class="product-card__operation">
+                            <div class="product-card-size">
+                                <div class="product-card-size__title active">
+                                    Размерный ряд
+                                    <svg class="c-symbol symbol-arrow-down"><use xlink:href="#symbol-arrow-down" /></svg>
+                                </div>
+                                <ul class="product-card-size__list">
+                                    <li class="product-card-size__item">
+                                        <div class="product-card-size__col">
+                                            <div class="product-card-size__name">42 (XS)</div>
+                                        </div>
+                                        <div class="product-card-size__col">
+                                            <div class="c-counter">
+                                                <button type="button" class="but c-counter__btn dec"></button>
+                                                <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                                <button type="button" class="but c-counter__btn inc"></button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="product-card-size__item">
+                                        <div class="product-card-size__col">
+                                            <div class="product-card-size__name">44 (S)</div>
+                                        </div>
+                                        <div class="product-card-size__col">
+                                            <div class="c-counter">
+                                                <button type="button" class="but c-counter__btn dec"></button>
+                                                <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                                <button type="button" class="but c-counter__btn inc"></button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="product-card-size__item">
+                                        <div class="product-card-size__col">
+                                            <div class="product-card-size__name">46 (M)</div>
+                                        </div>
+                                        <div class="product-card-size__col">
+                                            <div class="c-counter">
+                                                <button type="button" class="but c-counter__btn dec"></button>
+                                                <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                                <button type="button" class="but c-counter__btn inc"></button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="product-card-size__item">
+                                        <div class="product-card-size__col">
+                                            <div class="product-card-size__name">48 (L)</div>
+                                        </div>
+                                        <div class="product-card-size__col">
+                                            <div class="c-counter">
+                                                <button type="button" class="but c-counter__btn dec"></button>
+                                                <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                                <button type="button" class="but c-counter__btn inc"></button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="product-card-size__item">
+                                        <div class="product-card-size__col">
+                                            <div class="product-card-size__name">50 (XL)</div>
+                                        </div>
+                                        <div class="product-card-size__col">
+                                            <div class="c-counter">
+                                                <button type="button" class="but c-counter__btn dec"></button>
+                                                <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                                <button type="button" class="but c-counter__btn inc"></button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="product-card-size__item">
+                                        <div class="product-card-size__col">
+                                            <div class="product-card-size__name">52 (XXL)</div>
+                                        </div>
+                                        <div class="product-card-size__col">
+                                            <div class="c-counter">
+                                                <button type="button" class="but c-counter__btn dec"></button>
+                                                <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                                <button type="button" class="but c-counter__btn inc"></button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="product-card-size__item">
+                                        <div class="product-card-size__col">
+                                            <div class="product-card-size__name">54 (3XL)</div>
+                                        </div>
+                                        <div class="product-card-size__col">
+                                            <div class="c-counter">
+                                                <button type="button" class="but c-counter__btn dec"></button>
+                                                <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                                <button type="button" class="but c-counter__btn inc"></button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
 
                         </div>
                         <div class="c-btn-layout c-btn-layout__left">
@@ -363,15 +475,55 @@
                     <div class="tabs">
                         <div class="tabs__nav">
                             <ul class="tabs-menu">
-                                <li class="tabs-menu__item current"><a href="#tab-review">Отзывы 2</a></li>
-                                <li class="tabs-menu__item"><a href="#tab-question">Вопросы</a></li>
+                                <li class="tabs-menu__item current"><a href="#tab-review">Отзывы</a><span class="tabs-menu__counter">2</span></li>
+                                <li class="tabs-menu__item"><a href="#tab-question">Вопросы</a><span class="tabs-menu__counter">8</span></li>
                             </ul>
                         </div>
                         <div class="tabs-content">
                             <div id="tab-review" class="tabs-content__item">
-                                Here you will be welcomed by quiet and warm interior. Toys, good books, age-old candy
-                                boxex and various details of interior create a certain magical atmosphere. For breakfast,
-                                you can always order curd fritters prepared f
+                                <div class="c-reviews">
+                                    <ul class="c-reviews__list">
+                                        <li class="c-reviews__item">
+                                            <div class="c-reviews-card">
+                                                <div class="c-reviews-card__header">
+                                                    <div class="c-reviews-card__name">Марина</div>
+                                                    <div class="c-reviews-card__date">(Неделю назад)</div>
+                                                </div>
+                                                <div class="c-reviews-card__body">
+                                                    <div class="c-reviews-card__text">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa fugiat harum illum inventore, ipsam magni minima minus, nostrum, odit perspiciatis quo sit tenetur veritatis voluptas voluptates. Eius libero recusandae saepe.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="c-reviews__item">
+                                            <div class="c-reviews-card">
+                                                <div class="c-reviews-card__header">
+                                                    <div class="c-reviews-card__name">Олег</div>
+                                                    <div class="c-reviews-card__date">(2 месяца назад)</div>
+
+                                                </div>
+                                                <div class="c-reviews-card__body">
+                                                    <div class="c-reviews-card__text">
+                                                        Футболка шикарная, и сидит супер! Очень довольна,!
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <form action="" class="c-reviews-form">
+                                        <h3 class="c-reviews-form__title">Оставить отзыв:</h3>
+                                        <ul class="c-reviews-form__list">
+                                            <li class="c-reviews-form__item">
+                                                <textarea name="review-product-card" id="review-product-card" cols="30" rows="5" placeholder="Текст сообщения"></textarea>
+                                            </li>
+                                        </ul>
+
+                                        <button class="c-btn">Оставить отзыв</button>
+
+                                    </form>
+                                </div>
                             </div>
                             <div id="tab-question" class="tabs-content__item">
                                 Here you will be welcomed by quiet and warm interior. Toys, good books, age-old candy
@@ -771,6 +923,9 @@
 <script src="./js/swiper/swiper.min.js"></script>
 <script src="./js/jquery-ui.min.js"></script>
 <script src="./js/range-slider.js"></script>
+
+<script type="text/javascript" src="./js/productgallery/zoom-image.js"></script>
+<script type="text/javascript" src="./js/productgallery/productgallery.js"></script>
 <script src="./js/main.js"></script>
 
 </body>

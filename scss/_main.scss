@@ -597,5 +597,50 @@ main {
         }
     }
 
+    &-size {
+        &__list {
+            margin-bottom: 20px;
+        }
+
+        &__item {
+            margin-bottom: 16px;
+        }
+        
+        &__title {
+            cursor: pointer;
+            margin-bottom: 24px;
+
+            .symbol-arrow-down {
+                font-size: 13px;
+                fill: #aeaeae;
+                transition: all .1s ease;
+            }
+
+            &.active {
+                .symbol-arrow-down {
+                    transform: rotate(180deg);
+                    transition: all .1s ease;
+                }
+            }
+        }
+
+        &__col {
+            vertical-align: middle;
+            display: inline-block;
+
+            &:nth-child(1) {
+                width: 60px;
+                margin-right: 4px;
+            }
+        }
+
+        &__name {
+            color: #aeaeae;
+            font-size: 14px;
+        }
+    }
+
+
+
 
 }
