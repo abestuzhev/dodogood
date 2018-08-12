@@ -477,6 +477,7 @@ body {
 
 .c-btn {
   cursor: pointer;
+  text-align: center;
   display: inline-block;
   text-decoration: none;
   font-size: 18px;
@@ -484,7 +485,7 @@ body {
   text-transform: uppercase;
   font-family: Roboto, sans-serif;
   background-color: #000;
-  padding: 20px 90px; }
+  padding: 20px 70px; }
   .c-btn-layout {
     margin-bottom: 30px; }
     .c-btn-layout__center {
@@ -1033,7 +1034,7 @@ body {
     letter-spacing: 1.5px;
     color: #ffffff; }
 
-main {
+main .bg-grey {
   background-color: #faf9f9; }
 
 .sidebar-bg {
@@ -1429,12 +1430,9 @@ main {
   .product-card-slider {
     width: 420px; }
   .product-card__img {
-    float: left;
-    width: 41%;
-    padding-right: 3%; }
+    float: left; }
   .product-card__about {
-    float: right;
-    width: 59%; }
+    margin-left: 460px; }
   .product-card__title {
     font-size: 36px;
     color: #3c3c3c;
@@ -1461,7 +1459,8 @@ main {
     font-family: Roboto, sans-serif; }
     .product-card-info__title {
       font-size: 24px;
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      font-weight: 700; }
     .product-card-info__item {
       color: #000000;
       font-size: 24px; }
@@ -1497,3 +1496,172 @@ main {
   .product-card-size__name {
     color: #aeaeae;
     font-size: 14px; }
+  .product-card-size__total {
+    color: #aaaaaa;
+    font-size: 16px;
+    margin-left: 36px;
+    margin-bottom: 8px; }
+    .product-card-size__total span {
+      color: #121214;
+      font-size: 18px;
+      font-weight: 700; }
+
+/*-----------------------------------*/
+/*basket-------------*/
+/*-----------------------------------*/
+.basket {
+  font-family: Roboto, sans-serif;
+  margin-bottom: 90px; }
+  .basket .c-h2-title {
+    text-transform: none;
+    text-align: left; }
+  .basket-list__item {
+    border-bottom: solid 2px #eee;
+    padding-bottom: 20px;
+    margin-bottom: 40px; }
+    .basket-list__item:last-child {
+      margin-bottom: 20px; }
+  .basket-card {
+    position: relative; }
+    .basket-card::after {
+      content: '';
+      clear: both;
+      display: table; }
+    .basket-card__delete {
+      width: 39px;
+      height: 39px;
+      background-color: #3c3c3c;
+      border-radius: 50px;
+      position: absolute;
+      right: 18px;
+      top: 70px;
+      cursor: pointer; }
+      .basket-card__delete::before {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        background-color: #fff;
+        top: 18px;
+        left: 10px;
+        -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg); }
+      .basket-card__delete::after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        background-color: #fff;
+        top: 18px;
+        left: 10px;
+        -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+                transform: rotate(45deg); }
+    .basket-card__row {
+      margin-bottom: 16px; }
+      .basket-card__row:first-child {
+        margin-bottom: 0; }
+      .basket-card__row::after {
+        content: '';
+        clear: both;
+        display: table; }
+    .basket-card__head {
+      margin-bottom: 26px;
+      background-color: #f7f7f7;
+      color: #333232;
+      font-size: 18px;
+      padding: 16px 0; }
+    .basket-card__img {
+      width: auto;
+      height: 222px;
+      margin-right: 20px;
+      border: 1px solid #ccc;
+      overflow: hidden; }
+      .basket-card__img img {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover; }
+    .basket-card-product__accent {
+      color: #3c3c3c;
+      font-weight: 900;
+      font-size: 16px;
+      line-height: 1.2;
+      margin-bottom: 6px;
+      padding-right: 10px; }
+    .basket-card-product__subaccent {
+      display: block;
+      color: #aeaeae;
+      font-size: 16px;
+      font-weight: 400;
+      padding-right: 10px; }
+    .basket-card-product-property__list {
+      margin-top: 24px;
+      padding-right: 10px; }
+    .basket-card-product-property__item {
+      color: #aaaaaa;
+      font-size: 16px;
+      margin-bottom: 4px; }
+      .basket-card-product-property__item span {
+        font-size: 18px;
+        color: #000000; }
+    .basket-card__about {
+      float: left;
+      width: 60%; }
+      .basket-card__about::after {
+        content: '';
+        clear: both;
+        display: table; }
+      .basket-card__about .basket-card__col {
+        float: left; }
+        .basket-card__about .basket-card__col:nth-child(1) {
+          width: 34%; }
+          .basket-card__about .basket-card__col:nth-child(1) .basket-card__head {
+            color: #f7f7f7; }
+        .basket-card__about .basket-card__col:nth-child(2) {
+          width: 40%; }
+        .basket-card__about .basket-card__col:nth-child(3) {
+          width: 26%; }
+    .basket-card__operation {
+      float: left;
+      width: 40%; }
+      .basket-card__operation::after {
+        content: '';
+        clear: both;
+        display: table; }
+      .basket-card__operation .basket-card__col {
+        float: left; }
+        .basket-card__operation .basket-card__col:nth-child(1) {
+          width: 30%; }
+        .basket-card__operation .basket-card__col:nth-child(2) {
+          width: 35%; }
+        .basket-card__operation .basket-card__col:nth-child(3) {
+          width: 35%; }
+    .basket-card-total {
+      border-top: 1px solid #eee;
+      padding: 10px 0; }
+      .basket-card-total::after {
+        content: '';
+        clear: both;
+        display: table; }
+      .basket-card-total__price {
+        font-weight: 900;
+        float: right;
+        width: 35%; }
+  .basket__footer {
+    text-align: right; }
+  .basket-total {
+    color: #aaaaaa;
+    font-size: 16px;
+    margin-left: 36px;
+    margin-bottom: 8px; }
+    .basket-total span {
+      color: #121214;
+      font-size: 18px;
+      font-weight: 700; }
+    .basket-total__order {
+      color: #aaaaaa;
+      margin-bottom: 20px; }
+      .basket-total__order span {
+        color: #121214; }

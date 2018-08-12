@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Корзина</title>
+    <link rel="shortcut icon" href="favicon.png">
+
+
+    <link type="text/css" href="./css/style.css" rel="stylesheet">
+    <link type="text/css" href="./js/sumoselect/sumoselect.css" rel="stylesheet" media="all"/>
+    <link type="text/css" href="./js/swiper/swiper.css" rel="stylesheet" media="all"/>
+    <link type="text/css" href="./fonts/font.css" rel="stylesheet" media="all"/>
+
+    <link type="text/css" rel="stylesheet" href="./js/productgallery/productgallery.css"/>
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#9acc4f">
+    <meta name="msapplication-TileColor" content="#9acc4f">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+
+
+    <link type="text/css" href="./css/media.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="header-top">
+            <div class="c-layout">
+                <ul class="header-top-menu">
+                    <li class="header-top-menu__item">
+                        <a href="#" class="header-top-menu__link">О компании</a>
+                    </li>
+                    <li class="header-top-menu__item">
+                        <a href="#" class="header-top-menu__link">Оплата и доставка</a>
+                    </li>
+                    <li class="header-top-menu__item">
+                        <a href="#" class="header-top-menu__link">Партнерам</a>
+                    </li>
+                </ul>
+                <div class="header-top-contact">
+                    <span>Звоните нам</span>
+                    <a href="#">+7 (495) 502 49 77</a>
+                    <a href="#">+7 (925) 502 49 77</a>
+                </div>
+            </div>
+        </div>
+        <div class="header-body">
+            <div class="c-layout">
+                <ul class="header-grid">
+                    <li class="header-col header-col__left">
+                        <div class="header-login">
+                            <a href="#" class="header-login__item header-login__entry">Вход</a>
+                            <a href="#" class="header-login__item header-login__reg">Регистрация</a>
+                        </div>
+
+                        <a href="#" class="header-menu__mobile"></a>
+                    </li>
+                    <li class="header-col header-col__center">
+                        <a href="/" class="header-logo">
+                            <img src="./img/logo.svg" alt="">
+                        </a>
+                        <a href="#" class="header-logo-mobile">
+                            <img src="./img/logo-mobile.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="header-col header-col__right">
+                        <div class="header-operation">
+                            <div class="header-operation__item">
+                                <div class="header-search">
+
+                                    <div class="header-search__icon">
+                                    </div>
+                                    <form action="" class="header-search__form">
+                                        <input type="search" name="header_search" class="header-search__input">
+                                    </form>
+
+                                </div>
+                            </div>
+                            <div class="header-operation__item">
+                                <a href="#" class="header-basket"><span>Корзина пуста</span></a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="header-menu">
+            <ul class="header-menu__list">
+                <li class="header-menu__item">
+                    <a href="#" class="header-menu__link">Мужская</a>
+
+                    <div class="header-submenu">
+                        <div class="c-layout">
+                            <div class="header-submenu__title">Футболки</div>
+                            <div class="header-submenu__body">
+                                <ul class="header-submenu__list">
+                                    <li class="header-submenu__item"><a href="#">Короткий рукав</a></li>
+                                    <li class="header-submenu__item"><a href="#">Длинный рукав</a></li>
+                                    <li class="header-submenu__item"><a href="#">Клубные</a></li>
+                                </ul>
+                                <ul class="header-submenu__list">
+                                    <li class="header-submenu__item"><a href="#">Поло</a></li>
+                                    <li class="header-submenu__item"><a href="#">Майки</a></li>
+                                    <li class="header-submenu__item"><a href="#">Толстовки</a></li>
+                                </ul>
+                                <ul class="header-submenu__list">
+                                    <li class="header-submenu__item"><a href="#">Водолазки</a></li>
+                                    <li class="header-submenu__item"><a href="#">Куртки</a></li>
+                                    <li class="header-submenu__item"><a href="#">Ветровки</a></li>
+                                </ul>
+                                <ul class="header-submenu__list">
+                                    <li class="header-submenu__item"><a href="#">Жилеты</a></li>
+                                    <li class="header-submenu__item"><a href="#">Анораки</a></li>
+                                    <li class="header-submenu__item"><a href="#">Брюки</a></li>
+                                </ul>
+                                <ul class="header-submenu__list">
+                                    <li class="header-submenu__item"><a href="#">Спортивный стиль</a></li>
+                                    <li class="header-submenu__item"><a href="#">Шорты</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </li>
+                <li class="header-menu__item">
+                    <a href="#" class="header-menu__link">Женская</a>
+                </li>
+                <li class="header-menu__item">
+                    <a href="#" class="header-menu__link">Детская</a>
+                </li>
+                <li class="header-menu__item">
+                    <a href="#" class="header-menu__link">Большие размеры</a>
+                </li>
+                <li class="header-menu__item">
+                    <a href="#" class="header-menu__link">Новинки</a>
+                </li>
+                <li class="header-menu__item">
+                    <a href="#" class="header-menu__link">SALE</a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="header-operation-mobile">
+            <div class="header-operation-mobile__item">
+                <div class="header-search-mobile"><input type="text" placeholder="Поиск товаров"></div>
+            </div>
+            <div class="header-operation-mobile__item">
+                <a href="#" class="header-filter-mobile"></a>
+            </div>
+
+            <div class="catalog-filter-mobile">
+                <form action="">
+                    <ul class="catalog-filter-mobile__list">
+                        <li class="catalog-filter-mobile__item">
+                            <div class="catalog-filter-mobile-card">
+                                <div class="catalog-filter-mobile__title">Количество</div>
+                                <div class="catalog-filter-mobile__body">
+                                    <ul class="c-card-filter__list">
+                                        <li class="c-card-filter__item">
+                                            <input type="radio" name="filter-price" id="filter-price-roz" class="c-input-radio" checked="">
+                                            <label for="filter-price-roz" class="c-label-radio">Розничная цена</label>
+                                        </li>
+                                        <li class="c-card-filter__item">
+                                            <input type="radio" name="filter-price" id="filter-price-opt" class="c-input-radio">
+                                            <label for="filter-price-opt" class="c-label-radio">Розничная цена</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="catalog-filter-mobile__item">
+                            <div class="range-slider">
+                                <div class="formCost">
+                                    <input type="text" class="form__input" id="minCost-price" value="0"/>
+                                    <span> − </span>
+                                    <input type="text" class="form__input" id="maxCost-price" value="99999"/>
+                                </div>
+                                <div class="sliderCont">
+                                    <div class="range-slider_default" id="slider-price"></div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <div class="sidebar">
+        <div class="navigation">
+            <div class="navigation-header">
+                <div class="navigation-header__left">
+                    <a href="#" class="navigation-close"></a>
+                </div>
+                <div class="navigation-header__center">
+                    <a href="#" class="navigation-logo"><img src="./img/logo-mobile-white.png" alt=""></a>
+                </div>
+                <div class="navigation-header__right">
+                    <a href="#" class="navigation-basket"></a>
+                </div>
+
+            </div>
+            <div class="navigation-body">
+                <div class="navigation-login">
+                    <a href="#" class="navigation-login__item navigation-login__entry">Вход</a>
+                    <a href="#" class="navigation-login__item navigation-login__reg">Регистрация</a>
+                </div>
+
+                <div class="navigation-catalog">
+                    <div class="navigation-catalog__title">Каталог</div>
+                    <ul class="navigation-catalog__list">
+                        <li class="navigation-catalog__item">
+                            <a href="#" class="navigation-catalog__link">Мужская одежда</a>
+                            <ul class="navigation-subcatalog__list">
+                                <li class="navigation-subcatalog__item">
+                                    <a href="#" class="navigation-subcatalog__link">Футболки</a>
+                                </li>
+                                <li class="navigation-subcatalog__item">
+                                    <a href="#" class="navigation-subcatalog__link">Поло</a>
+                                </li>
+                                <li class="navigation-subcatalog__item">
+                                    <a href="#" class="navigation-subcatalog__link">Майки</a>
+                                </li>
+                                <li class="navigation-subcatalog__item">
+                                    <a href="#" class="navigation-subcatalog__link">Толстовки</a>
+                                </li>
+                                <li class="navigation-subcatalog__item">
+                                    <a href="#" class="navigation-subcatalog__link">Водолазки</a>
+                                </li>
+                                <li class="navigation-subcatalog__item">
+                                    <a href="#" class="navigation-subcatalog__link">Куртки</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navigation-catalog__item">
+                            <a href="#" class="navigation-catalog__link">Женская одежда</a>
+                        </li>
+                        <li class="navigation-catalog__item">
+                            <a href="#" class="navigation-catalog__link">Детская одежда</a>
+                            <ul class="navigation-subcatalog__list">
+                                <li class="navigation-subcatalog__item">
+                                    <a href="#" class="navigation-subcatalog__link">Футболки</a>
+                                </li>
+                                <li class="navigation-subcatalog__item">
+                                    <a href="#" class="navigation-subcatalog__link">Поло</a>
+                                </li>
+                                <li class="navigation-subcatalog__item">
+                                    <a href="#" class="navigation-subcatalog__link">Майки</a>
+                                </li>
+                                <li class="navigation-subcatalog__item">
+                                    <a href="#" class="navigation-subcatalog__link">Толстовки</a>
+                                </li>
+                                <li class="navigation-subcatalog__item">
+                                    <a href="#" class="navigation-subcatalog__link">Водолазки</a>
+                                </li>
+                                <li class="navigation-subcatalog__item">
+                                    <a href="#" class="navigation-subcatalog__link">Куртки</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navigation-catalog__item">
+                            <a href="#" class="navigation-catalog__link">Большие размеры</a>
+                        </li>
+                        <li class="navigation-catalog__item">
+                            <a href="#" class="navigation-catalog__link">Новинки</a>
+                        </li>
+                        <li class="navigation-catalog__item">
+                            <a href="#" class="navigation-catalog__link sale">SALE</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <ul class="navigation-menu">
+                    <li class="navigation-menu__item"><a href="#">О компании</a></li>
+                    <li class="navigation-menu__item"><a href="#">Оплата и доставка</a></li>
+                    <li class="navigation-menu__item"><a href="#">Партнерам</a></li>
+                    <li class="navigation-menu__item"><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class="sidebar-bg"></div>
+    <main>
+        <div class="c-layout">
+            <nav class="c-breadcrumb">
+                <ul class="c-breadcrumb__list">
+                    <li class="c-breadcrumb__item">
+
+                        <div class="c-breadcrumb-word">
+                            <a href="/" class="c-breadcrumb__link">Главная</a>
+                        </div>
+                    </li>
+                    <li class="c-breadcrumb__item">
+                        <div class="c-breadcrumb-word">
+                            Корзина товаров
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+
+            <div class="basket">
+                <form method="post" action="" name="basket_form" id="basket_form">
+                    <h2 class="c-h2-title">Корзина товаров</h2>
+                    <ul class="basket-list">
+                        <!--START basket-list__item-->
+                        <li class="basket-list__item">
+                            <div class="basket-card">
+                                <div class="basket-card__delete"></div>
+                                <div class="basket-card__about">
+                                    <div class="basket-card__col">
+                                        <div class="basket-card__head">Изображение</div>
+                                        <div class="basket-card__img"><img src="./img/product-1.jpg" alt=""></div>
+                                    </div>
+                                    <div class="basket-card__col">
+                                        <div class="basket-card__head">Наименование</div>
+                                        <div class="basket-card-product__accent">
+                                            Guns and Roses в нескокльо строк
+                                        </div>
+                                        <div class="basket-card-product__subaccent">Футболка</div>
+                                        <ul class="basket-card-product-property__list">
+                                            <li class="basket-card-product-property__item">Цвет: <span>Черный</span></li>
+                                            <li class="basket-card-product-property__item">Артикул: <span>3149372</span></li>
+                                        </ul>
+
+                                    </div>
+                                    <div class="basket-card__col">
+                                        <div class="basket-card__head">Цена за ед.</div>
+                                        <div class="basket-card-product__accent">
+                                            2 990 ₽
+                                        </div>
+                                        <div class="basket-card-product__subaccent">Цена</div>
+                                    </div>
+                                </div>
+                                <div class="basket-card__operation">
+                                    <div class="basket-card__row">
+                                        <div class="basket-card__col">
+                                            <div class="basket-card__head">Размеры</div>
+                                        </div>
+                                        <div class="basket-card__col">
+                                            <div class="basket-card__head">Кол-во</div>
+                                        </div>
+                                        <div class="basket-card__col">
+                                            <div class="basket-card__head">Сумма</div>
+                                        </div>
+                                    </div>
+                                    <div class="basket-card__row">
+                                        <div class="basket-card__col">
+                                            <div class="basket-card-product__accent">
+                                                42 (XS)
+                                            </div>
+                                        </div>
+                                        <div class="basket-card__col">
+                                            <div class="c-counter">
+                                                <button type="button" class="but c-counter__btn dec"></button>
+                                                <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                                <button type="button" class="but c-counter__btn inc"></button>
+                                            </div>
+                                        </div>
+                                        <div class="basket-card__col">
+                                            <div class="basket-card-product__accent">
+                                                2 990 ₽
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="basket-card__row">
+                                        <div class="basket-card__col">
+                                            <div class="basket-card-product__accent">
+                                                42 (XS)
+                                            </div>
+                                        </div>
+                                        <div class="basket-card__col">
+                                            <div class="c-counter">
+                                                <button type="button" class="but c-counter__btn dec"></button>
+                                                <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                                <button type="button" class="but c-counter__btn inc"></button>
+                                            </div>
+                                        </div>
+                                        <div class="basket-card__col">
+                                            <div class="basket-card-product__accent">
+                                                2 990 ₽
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="basket-card__row">
+                                        <div class="basket-card-total">
+                                            <div class="basket-card-total__price">12 990 ₽</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </li>
+                        <!--END basket-list__item-->
+                        <!--START basket-list__item-->
+                        <li class="basket-list__item">
+                            <div class="basket-card">
+                                <div class="basket-card__delete"></div>
+                                <div class="basket-card__about">
+                                    <div class="basket-card__col">
+                                        <div class="basket-card__head">Изображение</div>
+                                        <div class="basket-card__img"><img src="./img/product-1.jpg" alt=""></div>
+                                    </div>
+                                    <div class="basket-card__col">
+                                        <div class="basket-card__head">Наименование</div>
+                                        <div class="basket-card-product__accent">
+                                            Guns and Roses в нескокльо строк
+                                        </div>
+                                        <div class="basket-card-product__subaccent">Футболка</div>
+                                        <ul class="basket-card-product-property__list">
+                                            <li class="basket-card-product-property__item">Цвет: <span>Черный</span></li>
+                                            <li class="basket-card-product-property__item">Артикул: <span>3149372</span></li>
+                                        </ul>
+
+                                    </div>
+                                    <div class="basket-card__col">
+                                        <div class="basket-card__head">Цена за ед.</div>
+                                        <div class="basket-card-product__accent">
+                                            2 990 ₽
+                                        </div>
+                                        <div class="basket-card-product__subaccent">Цена</div>
+                                    </div>
+                                </div>
+                                <div class="basket-card__operation">
+                                    <div class="basket-card__row">
+                                        <div class="basket-card__col">
+                                            <div class="basket-card__head">Размеры</div>
+                                        </div>
+                                        <div class="basket-card__col">
+                                            <div class="basket-card__head">Кол-во</div>
+                                        </div>
+                                        <div class="basket-card__col">
+                                            <div class="basket-card__head">Сумма</div>
+                                        </div>
+                                    </div>
+                                    <div class="basket-card__row">
+                                        <div class="basket-card__col">
+                                            <div class="basket-card-product__accent">
+                                                42 (XS)
+                                            </div>
+                                        </div>
+                                        <div class="basket-card__col">
+                                            <div class="c-counter">
+                                                <button type="button" class="but c-counter__btn dec"></button>
+                                                <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                                <button type="button" class="but c-counter__btn inc"></button>
+                                            </div>
+                                        </div>
+                                        <div class="basket-card__col">
+                                            <div class="basket-card-product__accent">
+                                                2 990 ₽
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="basket-card__row">
+                                        <div class="basket-card__col">
+                                            <div class="basket-card-product__accent">
+                                                42 (XS)
+                                            </div>
+                                        </div>
+                                        <div class="basket-card__col">
+                                            <div class="c-counter">
+                                                <button type="button" class="but c-counter__btn dec"></button>
+                                                <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                                <button type="button" class="but c-counter__btn inc"></button>
+                                            </div>
+                                        </div>
+                                        <div class="basket-card__col">
+                                            <div class="basket-card-product__accent">
+                                                2 990 ₽
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="basket-card__row">
+                                        <div class="basket-card-total">
+                                            <div class="basket-card-total__price">12 990 ₽</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </li>
+                        <!--END basket-list__item-->
+                        <!--START basket-list__item-->
+                        <li class="basket-list__item">
+                            <div class="basket-card">
+                                <div class="basket-card__delete"></div>
+                                <div class="basket-card__about">
+                                    <div class="basket-card__col">
+                                        <div class="basket-card__head">Изображение</div>
+                                        <div class="basket-card__img"><img src="./img/product-1.jpg" alt=""></div>
+                                    </div>
+                                    <div class="basket-card__col">
+                                        <div class="basket-card__head">Наименование</div>
+                                        <div class="basket-card-product__accent">
+                                            Guns and Roses в нескокльо строк
+                                        </div>
+                                        <div class="basket-card-product__subaccent">Футболка</div>
+                                        <ul class="basket-card-product-property__list">
+                                            <li class="basket-card-product-property__item">Цвет: <span>Черный</span></li>
+                                            <li class="basket-card-product-property__item">Артикул: <span>3149372</span></li>
+                                        </ul>
+
+                                    </div>
+                                    <div class="basket-card__col">
+                                        <div class="basket-card__head">Цена за ед.</div>
+                                        <div class="basket-card-product__accent">
+                                            2 990 ₽
+                                        </div>
+                                        <div class="basket-card-product__subaccent">Цена</div>
+                                    </div>
+                                </div>
+                                <div class="basket-card__operation">
+                                    <div class="basket-card__row">
+                                        <div class="basket-card__col">
+                                            <div class="basket-card__head">Размеры</div>
+                                        </div>
+                                        <div class="basket-card__col">
+                                            <div class="basket-card__head">Кол-во</div>
+                                        </div>
+                                        <div class="basket-card__col">
+                                            <div class="basket-card__head">Сумма</div>
+                                        </div>
+                                    </div>
+                                    <div class="basket-card__row">
+                                        <div class="basket-card__col">
+                                            <div class="basket-card-product__accent">
+                                                42 (XS)
+                                            </div>
+                                        </div>
+                                        <div class="basket-card__col">
+                                            <div class="c-counter">
+                                                <button type="button" class="but c-counter__btn dec"></button>
+                                                <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                                <button type="button" class="but c-counter__btn inc"></button>
+                                            </div>
+                                        </div>
+                                        <div class="basket-card__col">
+                                            <div class="basket-card-product__accent">
+                                                2 990 ₽
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="basket-card__row">
+                                        <div class="basket-card__col">
+                                            <div class="basket-card-product__accent">
+                                                42 (XS)
+                                            </div>
+                                        </div>
+                                        <div class="basket-card__col">
+                                            <div class="c-counter">
+                                                <button type="button" class="but c-counter__btn dec"></button>
+                                                <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                                <button type="button" class="but c-counter__btn inc"></button>
+                                            </div>
+                                        </div>
+                                        <div class="basket-card__col">
+                                            <div class="basket-card-product__accent">
+                                                2 990 ₽
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="basket-card__row">
+                                        <div class="basket-card__col">
+                                            <div class="basket-card-product__accent">
+                                                42 (XS)
+                                            </div>
+                                        </div>
+                                        <div class="basket-card__col">
+                                            <div class="c-counter">
+                                                <button type="button" class="but c-counter__btn dec"></button>
+                                                <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                                <button type="button" class="but c-counter__btn inc"></button>
+                                            </div>
+                                        </div>
+                                        <div class="basket-card__col">
+                                            <div class="basket-card-product__accent">
+                                                2 990 ₽
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="basket-card__row">
+                                        <div class="basket-card__col">
+                                            <div class="basket-card-product__accent">
+                                                42 (XS)
+                                            </div>
+                                        </div>
+                                        <div class="basket-card__col">
+                                            <div class="c-counter">
+                                                <button type="button" class="but c-counter__btn dec"></button>
+                                                <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                                <button type="button" class="but c-counter__btn inc"></button>
+                                            </div>
+                                        </div>
+                                        <div class="basket-card__col">
+                                            <div class="basket-card-product__accent">
+                                                2 990 ₽
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="basket-card__row">
+                                        <div class="basket-card-total">
+                                            <div class="basket-card-total__price">12 990 ₽</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </li>
+                        <!--END basket-list__item-->
+                    </ul>
+                    <!--END basket-list-->
+
+                    <div class="basket__footer">
+                        <div class="basket-total">Всего <span>3</span> позиции общей суммой <span>17 940 ₽</span></div>
+                        <div class="basket-total__order">Номер заказа <span>№37567</span></div>
+                        <a href="#" class="c-btn">Оформить заказ</a>
+                    </div>
+                </form>
+            </div>
+
+
+
+
+
+        </div>
+
+
+    </main>
+</div>
+<footer class="footer">
+    <div class="c-layout">
+        <ul class="footer-grid">
+            <li class="footer-col">
+                <div class="footer-logo">
+                    <img src="./img/footer-logo.svg" alt="">
+                </div>
+                <div class="footer-address">
+                    Адрес: 124460, г. Зеленоград,
+                    проезд 4922, дом 4, стр.4
+                </div>
+            </li>
+            <li class="footer-col">
+                <ul class="footer-menu">
+                    <li class="footer-menu__item"><a href="#" class="footer-menu__link">О компании</a></li>
+                    <li class="footer-menu__item"><a href="#" class="footer-menu__link">Оплата и доставка</a></li>
+                    <li class="footer-menu__item"><a href="#" class="footer-menu__link">Партнерская программа</a></li>
+                    <li class="footer-menu__item"><a href="#" class="footer-menu__link">Контакты</a></li>
+                </ul>
+            </li>
+            <li class="footer-col">
+                <div class="footer-social">
+                    <div class="footer-social__title">Мы в соцсетях</div>
+                    <div class="footer-social__item"></div>
+                    <div class="footer-social__item"></div>
+                </div>
+                <div class="footer-contact">
+                    <div class="footer-contact__title">связаться с нами</div>
+                    <ul class="footer-contact__list">
+                        <li class="footer-contact__item"><a href="#">+ 7 (495) 502 49 77</a></li>
+                        <li class="footer-contact__item"><a href="#">+ 7 (925) 502 49 77</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <div class="footer-copyright">
+            <p>@ 2018 г. ИП Клочихина Додо Александровна.</p>
+            <p>Все права защищены</p>
+        </div>
+    </div>
+</footer>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <!--<symbol id="symbol-search" viewBox="">-->
+
+    <!--</symbol>-->
+
+    <!--<symbol id="symbol-basket" viewBox="">-->
+
+    <!--</symbol>-->
+
+    <symbol id="symbol-arrow-left" viewBox="0 0 21 35">
+        <path d="M18.677 34.552a1.56 1.56 0 0 1-1.062-.406L.44 18.257a1.315 1.315 0 0 1 0-1.962L17.615.407a1.588 1.588 0 0 1 2.123 0c.584.542.584 1.42 0 1.961L3.62 17.276l16.117 14.907c.584.542.584 1.42 0 1.963a1.56 1.56 0 0 1-1.061.406"/>
+    </symbol>
+
+    <symbol id="symbol-arrow-right" viewBox="0 0 21 35">
+        <path d="M2.323 34.552a1.56 1.56 0 0 0 1.062-.406L20.56 18.257a1.315 1.315 0 0 0 0-1.962L3.385.407a1.588 1.588 0 0 0-2.122 0 1.316 1.316 0 0 0 0 1.961L17.38 17.276 1.263 32.183a1.317 1.317 0 0 0 0 1.963 1.56 1.56 0 0 0 1.06.406"/>
+    </symbol>
+    <symbol id="symbol-arrow-down" viewBox="0 0 35 21">
+        <path d="M0,1.5c0,0.4,0.1,0.8,0.4,1.1l15.9,17.2c0.5,0.5,1.3,0.6,1.9,0.1c0,0,0.1-0.1,0.1-0.1L34.1,2.6
+	c0.5-0.6,0.5-1.5,0-2.1c-0.5-0.5-1.3-0.6-1.9-0.1c0,0-0.1,0.1-0.1,0.1L17.3,16.6L2.4,0.4C1.9-0.1,1.1-0.1,0.5,0.3
+	c0,0-0.1,0.1-0.1,0.1C0.1,0.7,0,1.1,0,1.5"/>
+    </symbol>
+    <symbol id="symbol-arrow-up" viewBox="0 0 35 21">
+        <path d="M34.6,18.7c0-0.4-0.1-0.8-0.4-1.1L18.3,0.4c-0.5-0.5-1.3-0.6-1.9-0.1c0,0-0.1,0.1-0.1,0.1L0.4,17.6
+	c-0.5,0.6-0.5,1.5,0,2.1c0.5,0.5,1.3,0.6,1.9,0.1c0,0,0.1-0.1,0.1-0.1L17.3,3.6l14.9,16.1c0.5,0.5,1.3,0.6,1.9,0.1
+	c0,0,0.1-0.1,0.1-0.1C34.4,19.4,34.6,19.1,34.6,18.7"/>
+    </symbol>
+</svg>
+
+
+<script src="./js/jquery.min.js"></script>
+<script src="./js/sumoselect/jquery.sumoselect.min.js"></script>
+<script src="./js/swiper/swiper.min.js"></script>
+<script src="./js/jquery-ui.min.js"></script>
+<script src="./js/range-slider.js"></script>
+
+<script type="text/javascript" src="./js/productgallery/zoom-image.js"></script>
+<script type="text/javascript" src="./js/productgallery/productgallery.js"></script>
+<script src="./js/main.js"></script>
+
+</body>
+</html>
