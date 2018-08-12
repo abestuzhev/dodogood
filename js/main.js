@@ -190,6 +190,6 @@ $(function(){
     });
 
 
-    /*header-login__entry*/
+    $('.js-mask-phone').mask('+7(000)000-00-00');
 
 })

@@ -31,7 +31,7 @@ body {
     border-radius: 6px;
     border: solid 2px #f8f8f8;
     width: 100%;
-    padding: 20px;
+    padding: 10px 15px;
     font-size: 18px;
 }
 
@@ -57,8 +57,8 @@ body {
     line-height: 1;
     margin-bottom: 20px;
     font-weight: 600;
-    text-transform: uppercase;
-    text-align: center;
+    //text-transform: uppercase;
+    //text-align: center;
 }
 
 .c-subtitle {
@@ -279,6 +279,82 @@ body {
             background-color: #121214;
         }
     }
+}
+
+.c-form {
+    &__title {
+        color: #3c3c3c;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 18px;
+    }
+
+    &-list {
+        margin-bottom: 30px;
+
+        &__item {
+            margin-bottom: 16px;
+        }
+    }
+
+    .c-select {
+        border: solid 2px #eee;
+    }
+
+    .SumoSelect {
+        width: 100%;
+    }
+
+    .SumoSelect > .CaptionCont {
+        border: solid 2px #eee;
+
+        padding: 8px 15px;
+    }
+
+    .SumoSelect > .CaptionCont > span {
+        color: #8C8C8C;
+    }
+
+    textarea {
+        border: solid 2px #eee;
+    }
+
+
+}
+
+.wrapper textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #8C8C8C;
+}
+.wrapper textarea::-moz-placeholder { /* Firefox 19+ */
+    color: #8C8C8C;
+}
+.wrapper textarea:-ms-input-placeholder { /* IE 10+ */
+    color: #8C8C8C;
+}
+.wrapper textarea:-moz-placeholder { /* Firefox 18- */
+    color: #8C8C8C;
+}
+
+.c-input-text {
+    padding: 8px 15px;
+    border-radius: 6px;
+    border: solid 2px #eee;
+    font-size: 16px;
+    width: 100%;
+    outline: none;
+}
+
+.c-input-text::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #8C8C8C;
+}
+.c-input-text::-moz-placeholder { /* Firefox 19+ */
+    color: #8C8C8C;
+}
+.c-input-text:-ms-input-placeholder { /* IE 10+ */
+    color: #8C8C8C;
+}
+.c-input-text:-moz-placeholder { /* Firefox 18- */
+    color: #8C8C8C;
 }
 
 .c-input-radio {

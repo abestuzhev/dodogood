@@ -212,7 +212,10 @@
     .c-btn {
         padding: 20px 70px;
     }
+
+
 }
+
 @media (max-width: 730px) {
 
     .catalog-list__item {

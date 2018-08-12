@@ -449,6 +449,16 @@ main {
     //margin-bottom: 30px;
     .c-h2-title {
         margin-bottom: 0;
+        text-transform: uppercase;
+        text-align: center;
+    }
+}
+
+.new {
+    .c-h2-title {
+        margin-bottom: 0;
+        text-transform: uppercase;
+        text-align: center;
     }
 }
 
@@ -899,9 +909,54 @@ main {
 }
 
 
+/*-----------------------------------*/
+/*ordering-------------*/
+/*-----------------------------------*/
+
+.ordering {
+    margin-bottom: 60px;
+
+    &-header {
+        &__text {
+            color: #333232;
+            font-size: 16px;
+            text-transform: uppercase;
+            margin-right: 10px;
+        }
+
+        &__col {
+            display: inline-block;
+            vertical-align: top;
+        }
+    }
+
+    &-body {
+        width: 40%;
+    }
+
+    &-total {
+        color: #aaaaaa;
+        font-size: 16px;
+        margin-bottom: 8px;
+
+        span {
+            color: #121214;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        &__order {
+            color: #aaaaaa;
+            margin-bottom: 20px;
+
+            span {
+                color: #121214;
+            }
+        }
+    }
 
 
-
+}
 
 
 
