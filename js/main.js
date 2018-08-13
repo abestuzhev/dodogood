@@ -192,4 +192,24 @@ $(function(){
 
     $('.js-mask-phone').mask('+7(000)000-00-00');
 
-})
+
+    $(document).on('click', '.product-card-size__add', function(e){
+        e.preventDefault();
+
+        $(this)
+            .parents('.product-card-size__card')
+            .siblings('.product-card-size__clone').find('.product-card-size__item')
+            .clone().appendTo(".product-card-size__list");
+
+        $('.product-card__retail .product-card-size__list select').SumoSelect();
+    });
+
+    $(document).on('click', '.product-card-size__del', function(e) {
+        e.preventDefault();
+        var $elem_item = $(this).parents('.product-card-size__item');
+        $elem_item.remove();
+    });
+
+
+
+});

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Каталог</title>
+    <title>Карточка розница</title>
     <link rel="shortcut icon" href="favicon.png">
 
 
@@ -360,100 +360,58 @@
                         <div class="product-card__type">Футболка</div>
                         <div class="product-card-price">
                             <div class="product-card-price__now">4 179 руб.</div>
-                            <div class="product-card-price__type">Оптовая цена</div>
+                            <div class="product-card-price__old">4 500 руб.</div>
                         </div>
-                        <div class="product-card__operation">
+                        <div class="product-card__operation product-card__retail">
                             <div class="product-card-size">
-                                <div class="product-card-size__title active">
-                                    Размерный ряд
-                                    <svg class="c-symbol symbol-arrow-down"><use xlink:href="#symbol-arrow-down" /></svg>
+                                <div class="product-card-size__clone">
+                                    <li class="product-card-size__item">
+                                        <div class="product-card-size__card">
+                                            <div class="product-card-size__col">
+                                                <div class="c-counter">
+                                                    <button type="button" class="but c-counter__btn dec"></button>
+                                                    <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                                    <button type="button" class="but c-counter__btn inc"></button>
+                                                </div>
+                                            </div>
+                                            <div class="product-card-size__col">
+                                                <select name="product-retail-size" id="" class="">
+                                                    <option value="42">42</option>
+                                                    <option value="44">44</option>
+                                                    <option value="46">46</option>
+                                                    <option value="48">48</option>
+                                                    <option value="50">50</option>
+                                                </select>
+                                            </div>
+                                            <a href="#" class="product-card-size__del"></a>
+                                        </div>
+
+                                    </li>
+                                </div> <!--END product-card-size__clone-->
+                                <div class="product-card-size__card">
+                                    <div class="product-card-size__col">
+                                        <div class="c-counter">
+                                            <button type="button" class="but c-counter__btn dec"></button>
+                                            <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                            <button type="button" class="but c-counter__btn inc"></button>
+                                        </div>
+                                    </div>
+                                    <div class="product-card-size__col">
+                                        <select name="product-retail-size" id="product-retail-size" class="c-select">
+                                            <option value="42">42</option>
+                                            <option value="44">44</option>
+                                            <option value="46">46</option>
+                                            <option value="48">48</option>
+                                            <option value="50">50</option>
+                                        </select>
+                                    </div>
+                                    <a href="#" class="product-card-size__add"></a>
                                 </div>
                                 <ul class="product-card-size__list">
-                                    <li class="product-card-size__item">
-                                        <div class="product-card-size__col">
-                                            <div class="product-card-size__name">42 (XS)</div>
-                                        </div>
-                                        <div class="product-card-size__col">
-                                            <div class="c-counter">
-                                                <button type="button" class="but c-counter__btn dec"></button>
-                                                <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
-                                                <button type="button" class="but c-counter__btn inc"></button>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="product-card-size__item">
-                                        <div class="product-card-size__col">
-                                            <div class="product-card-size__name">44 (S)</div>
-                                        </div>
-                                        <div class="product-card-size__col">
-                                            <div class="c-counter">
-                                                <button type="button" class="but c-counter__btn dec"></button>
-                                                <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
-                                                <button type="button" class="but c-counter__btn inc"></button>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="product-card-size__item">
-                                        <div class="product-card-size__col">
-                                            <div class="product-card-size__name">46 (M)</div>
-                                        </div>
-                                        <div class="product-card-size__col">
-                                            <div class="c-counter">
-                                                <button type="button" class="but c-counter__btn dec"></button>
-                                                <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
-                                                <button type="button" class="but c-counter__btn inc"></button>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="product-card-size__item">
-                                        <div class="product-card-size__col">
-                                            <div class="product-card-size__name">48 (L)</div>
-                                        </div>
-                                        <div class="product-card-size__col">
-                                            <div class="c-counter">
-                                                <button type="button" class="but c-counter__btn dec"></button>
-                                                <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
-                                                <button type="button" class="but c-counter__btn inc"></button>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="product-card-size__item">
-                                        <div class="product-card-size__col">
-                                            <div class="product-card-size__name">50 (XL)</div>
-                                        </div>
-                                        <div class="product-card-size__col">
-                                            <div class="c-counter">
-                                                <button type="button" class="but c-counter__btn dec"></button>
-                                                <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
-                                                <button type="button" class="but c-counter__btn inc"></button>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="product-card-size__item">
-                                        <div class="product-card-size__col">
-                                            <div class="product-card-size__name">52 (XXL)</div>
-                                        </div>
-                                        <div class="product-card-size__col">
-                                            <div class="c-counter">
-                                                <button type="button" class="but c-counter__btn dec"></button>
-                                                <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
-                                                <button type="button" class="but c-counter__btn inc"></button>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="product-card-size__item">
-                                        <div class="product-card-size__col">
-                                            <div class="product-card-size__name">54 (3XL)</div>
-                                        </div>
-                                        <div class="product-card-size__col">
-                                            <div class="c-counter">
-                                                <button type="button" class="but c-counter__btn dec"></button>
-                                                <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
-                                                <button type="button" class="but c-counter__btn inc"></button>
-                                            </div>
-                                        </div>
-                                    </li>
+
+
                                 </ul>
+                                <a href="#" class="product-card__size-table">Таблица соответствия размеров</a>
                                 <div class="product-card-size__total">Всего <span>3</span> позиции общей суммой <span>10 737</span> руб.</div>
                             </div>
 
@@ -926,6 +884,7 @@
 <script src="./js/swiper/swiper.min.js"></script>
 <script src="./js/jquery-ui.min.js"></script>
 <script src="./js/range-slider.js"></script>
+
 <script type="text/javascript" src="./js/jquery.mask.min.js"></script>
 <script type="text/javascript" src="./js/productgallery/zoom-image.js"></script>
 <script type="text/javascript" src="./js/productgallery/productgallery.js"></script>
