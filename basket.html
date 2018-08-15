@@ -95,7 +95,10 @@
                                 </div>
                             </div>
                             <div class="header-operation__item">
-                                <a href="#" class="header-basket"><span>Корзина пуста</span></a>
+                                <a href="#" class="header-basket">
+                                    <div class="header-basket__count">3</div>
+                                    <div class="header-basket__text"><span>3</span> товара в корзине</div>
+                                </a>
                             </div>
                         </div>
                     </li>
@@ -702,6 +705,50 @@
         </div>
     </div>
 </footer>
+
+<div class="mfp-wrap popup-entry" tabindex="-1" style="overflow-x: hidden; overflow-y: auto;">
+    <div class="mfp-container mfp-inline-holder">
+        <div class="mfp-content">
+            <div class="popup">
+                <div class="popup-title">
+                    Вход
+                    <span class="popup-close"></span>
+                </div>
+                <div class="popup-body">
+                    <form action="#" class="popup-form" id="popup-entry">
+                        <div class="popup-form__item">
+                            <label class="c-label" for="authorization__email">Email или телефон<span class="c-obligatory-field">*</span></label>
+                            <input class="c-input-text" type="text" placeholder="ваш email" name="authorization__email"
+                                   id="authorization__email" required>
+                        </div>
+                        <div class="popup-form__item">
+                            <label class="c-label" for="authorization__pass">Пароль<span class="c-obligatory-field">*</span></label>
+                            <input class="c-input-text" type="password" name="authorization__pass" id="authorization__pass" required>
+                        </div>
+                        <div class="popup-form__item">
+                            <input type="checkbox" name="remember_authorization" id="remember_authorization" class="c-input-checkbox" required>
+                            <label class="c-label-checkbox" for="remember_authorization">Запомнить меня</label>
+                            <a class="popup-forgot-password" href="#">Забыли пароль?</a>
+                            <div class="popup-info"><span class="c-obligatory-field">*</span> обязательные поля</div>
+                        </div>
+
+                        <div class="popup-form__item">
+                            <div class="c-btn-layout__left">
+                                <button class="c-btn">Войти</button>
+                            </div>
+                        </div>
+                        <div class="popup-form__item">
+                            <p class="popup-new-user">Я новый посетитель <a href="#">Зарегистрироваться</a></p>
+                        </div>
+
+                    </form>
+                </div><!--popup-body-->
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mfp-bg mfp-ready"></div>
+<!--задний фон модального окна-->
 
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
     <!--<symbol id="symbol-search" viewBox="">-->

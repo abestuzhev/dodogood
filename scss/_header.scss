@@ -233,8 +233,26 @@
             background: url(../img/icon-basket.svg) 0 0 no-repeat;
         }
 
-        span {
+        &__text {
+            display: inline-block;
 
+            span {
+                color: #ec0c0c;
+            }
+        }
+
+        &__count {
+            background-color: #ec0c0c;
+            border-radius: 20px;
+            width: 18px;
+            height: 18px;
+            position: absolute;
+            top: -13px;
+            left: 13px;
+            font-size: 13px;
+            color: #ffffff;
+            text-align: center;
+            line-height: 18px;
         }
     }
 

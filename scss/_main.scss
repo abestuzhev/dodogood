@@ -1140,24 +1140,80 @@ main {
         &__col {
             float: left;
             &:nth-child(1) {
-                width: 30%;
+                width: 25%;
             }
 
             &:nth-child(2) {
-                width: 40%;
+                width: 22%;
             }
 
             &:nth-child(3) {
-                width: 30%;
+                width: 31%;
                 font-weight: 700;
+            }
+            &:nth-child(4) {
+                width: 22%;
             }
         }
 
     }
+
+    &-status {
+        &__correct {
+            color: #00bf26;
+        }
+
+        &__cancel {
+            color: #fe0a0a;
+        }
+    }
 }
 
+//category
+
+.category {
+    &-grid {
+
+        &::after {
+            content: '';
+            clear: both;
+            display: table;
+        }
+
+    }
+
+    &-col {
+        float: left;
+        width: 50%;
+
+        &::after {
+            content: '';
+            clear: both;
+            display: table;
+        }
+
+        &__line {
+
+            &::after {
+                content: '';
+                clear: both;
+                display: table;
+            }
+        }
+
+        &__half {
+            float: left;
+            width: 50%;
+        }
+    }
+
+    &-card {
+        display: block;
+        width: 100%;
+    }
 
 
+}
 
 
 
