@@ -58,6 +58,15 @@ body {
         display: block;
         height: 290px;
     }
+
+    input {
+        padding: 8px 15px;
+        border-radius: 6px;
+        border: solid 2px #eee;
+        font-size: 16px;
+        width: 100%;
+        outline: none;
+    }
 }
 
 .c-h2-title {
@@ -95,6 +104,75 @@ body {
 .SumoSelect > .CaptionCont > label > i {
     background: none !important;
 }
+.c-ul-list {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #3c3c3c;
+    padding-left: 3.5rem;
+}
+
+.c-ul-list li {
+    list-style: disc outside;
+    margin-bottom: 3px;
+    font-size: 16px;
+}
+
+.c-ul-list li ul {
+    padding-left: 30px;
+}
+
+.c-ul-list li ul li {
+    list-style: circle outside;
+    padding-left: 3px;
+}
+
+.c-ul-list > ul li {
+    list-style: circle outside;
+    padding-left: 50px;
+}
+
+.c-ol-list {
+    list-style-type: none;
+    counter-reset: item;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.c-ol-list li {
+    margin-bottom: .2rem;
+    font-size: 15px;
+    padding-left: 35px;
+    position: relative;
+}
+
+.c-ol-list > li:before {
+    content: counter(item) ") ";
+    counter-increment: item;
+    position: absolute;
+    left: 8px;
+    width: 24px;
+    text-align: right;
+}
+
+.c-ol-list li ul {
+    padding-left: 30px;
+}
+
+.c-ol-list > ul li {
+    list-style: lower-latin outside;
+    padding-left: 50px;
+}
+
+.c-ol-list li ul li {
+    list-style: lower-latin outside;
+    padding-left: 3px;
+}
+
+.c-ol-list li ul li:before,
+.c-ol-list > ul li:before {
+    content: '';
+}
+
 
 .c-breadcrumb {
     padding: 30px 0;
@@ -835,7 +913,7 @@ body {
 }
 
 
-.c-counter {
+.wrapper .c-counter {
     border-radius: .2rem;
     border: solid 0.5px #c2c0c0;
     font-family: Roboto, sans-serif;
@@ -852,6 +930,7 @@ body {
     }
 
     &__field {
+        padding: 0;
         border: none;
         background-color: #fff;
         outline: none;

@@ -51,14 +51,22 @@ $(function(){
     /*кастомные селекты*/
     $('.c-select').SumoSelect();
 
+    var swiperSlider = new Swiper('.swiper-slider', {
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+        },
+    });
+
     /*слайдер карусель*/
     var swiper = new Swiper('.swiper-container', {
         slidesPerView: 4,
         spaceBetween: 30,
+        loop: true,
 
         navigation: {
             nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            prevEl: '.swiper-button-prev'
         },
 
         breakpoints: {
