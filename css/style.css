@@ -175,7 +175,8 @@ body {
 .wrapper a {
   -webkit-transition: all .1s ease-in-out;
   -o-transition: all .1s ease-in-out;
-  transition: all .1s ease-in-out; }
+  transition: all .1s ease-in-out;
+  color: #333232; }
   .wrapper a:hover {
     color: #ff0909;
     -webkit-transition: all .1s ease-in-out;
@@ -2477,3 +2478,5 @@ main .bg-grey {
   font-family: Roboto, sans-serif;
   font-size: 16px;
   line-height: 1.2; }
+  .sale_order_full_table a {
+    color: #333232; }
