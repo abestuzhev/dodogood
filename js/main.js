@@ -30,6 +30,30 @@ function equalheight(container){
     });
 }
 
+function showPopup(icon, popup) {
+    $(document).on('click', icon, function (e) {
+        var $html = $('html');
+        e.preventDefault();
+        $(popup).addClass('is-visible');
+        $('.mfp-bg').addClass('is-visible');
+
+
+        $html.addClass('lock-html');
+        $('body').addClass('fixed-input');
+        if(windowWidth > documentWidth){
+            $html.css({
+                'margin-right':'17px'
+            });
+            $('.mfp-wrap').css({
+                'overflow-y':'scroll'
+            });
+            // console.log('Есть полоса прокрутки');
+        }else {
+            // console.log('Нет полосы прокрутки');
+        }
+    });
+}
+
 $(function(){
 
 
@@ -222,29 +246,6 @@ $(function(){
     });
 
 
-    function showPopup(icon, popup) {
-        $(document).on('click', icon, function (e) {
-            var $html = $('html');
-            e.preventDefault();
-            $(popup).addClass('is-visible');
-            $('.mfp-bg').addClass('is-visible');
-
-
-            $html.addClass('lock-html');
-            $('body').addClass('fixed-input');
-            if(windowWidth > documentWidth){
-                $html.css({
-                    'margin-right':'17px'
-                });
-                $('.mfp-wrap').css({
-                    'overflow-y':'scroll'
-                });
-                // console.log('Есть полоса прокрутки');
-            }else {
-                // console.log('Нет полосы прокрутки');
-            }
-        });
-    }
 
     $(document).on('click', '.popup-close', function (e) {
         e.preventDefault();

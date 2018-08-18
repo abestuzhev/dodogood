@@ -134,6 +134,38 @@
 
         &__reg {
         }
+
+        &__exit {
+            display: inline-block;
+            position: relative;
+            width: 20px;
+            height: 20px;
+            top: 5px;
+            margin-left: 5px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 14px;
+                width: 2px;
+                height: 16px;
+                background-color: #4a4a4a;
+                -webkit-transform: rotate(-45deg);
+                -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg); }
+            &::after {
+                content: '';
+                position: absolute;
+                top: 7;
+                left: 7px;
+                width: 16px;
+                height: 2px;
+                background-color: #4a4a4a;
+                -webkit-transform: rotate(-45deg);
+                -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg); }
+        }
     }
 
     &-operation {
