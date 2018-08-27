@@ -28,7 +28,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.wrapper a {
+a {
     transition: all .1s ease-in-out;
     color: #333232;
 
@@ -589,6 +589,7 @@ body {
 }
 
 .c-btn {
+
     cursor: pointer;
     text-align: center;
     display: inline-block;

@@ -172,12 +172,12 @@ body {
   height: 100%;
   font-family: 'Roboto', sans-serif; }
 
-.wrapper a {
+a {
   -webkit-transition: all .1s ease-in-out;
   -o-transition: all .1s ease-in-out;
   transition: all .1s ease-in-out;
   color: #333232; }
-  .wrapper a:hover {
+  a:hover {
     color: #ff0909;
     -webkit-transition: all .1s ease-in-out;
     -o-transition: all .1s ease-in-out;
