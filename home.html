@@ -32,7 +32,7 @@
     <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
     <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">-->
 </head>
 
 <body>
@@ -52,9 +52,10 @@
                     </li>
                 </ul>
                 <div class="header-top-contact">
-                    <span>Звоните нам</span>
-                    <a href="#">+7 (495) 502 49 77</a>
-                    <a href="#">+7 (925) 502 49 77</a>
+                    <!--<span>Звоните нам</span>-->
+                    <!--<a href="#">+7 (495) 502 49 77</a>-->
+                    <!--<a href="#">+7 (925) 502 49 77</a>-->
+                    <a href="#" class="header-call__btn">Заказать звонок</a>
                 </div>
             </div>
         </div>
@@ -62,14 +63,9 @@
             <div class="c-layout">
                 <ul class="header-grid">
                     <li class="header-col header-col__left">
-                        <div class="header-login">
-                            <a href="#" class="header-login__item header-login__entry">Вход</a>
-                            <a href="#" class="header-login__item header-login__reg">Регистрация</a>
-                        </div>
+
 
                         <a href="#" class="header-menu__mobile"></a>
-                    </li>
-                    <li class="header-col header-col__center">
                         <a href="/" class="header-logo">
                             <img src="./img/logo.svg" alt="">
                         </a>
@@ -77,7 +73,14 @@
                             <img src="./img/logo-mobile.svg" alt="">
                         </a>
                     </li>
+                    <li class="header-col header-col__center">
+                        <div class="header-slogan">Оптово-розничный интернет-магазин одежды от производителя</div>
+                    </li>
                     <li class="header-col header-col__right">
+                        <div class="header-login">
+                            <a href="#" class="header-login__item header-login__entry">Вход</a>
+                            <a href="#" class="header-login__item header-login__reg">Регистрация</a>
+                        </div>
                         <div class="header-operation">
                             <div class="header-operation__item">
                                 <div class="header-search">
@@ -334,8 +337,10 @@
                     </div>
                 </div>
                 <!-- Add Arrows -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <!--<div class="swiper-button-next"></div>-->
+                <!--<div class="swiper-button-prev"></div>-->
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
             </div>
             <a href="#" class="home-btn"></a>
         </div>
@@ -722,6 +727,30 @@
         </div>
     </div>
 </footer>
+
+<div class="mfp-wrap popup-reg" tabindex="-1" style="overflow-x: hidden; overflow-y: auto;">
+    <div class="mfp-container mfp-inline-holder">
+        <div class="mfp-content">
+            <div class="popup">
+                <div class="popup-title">
+                    Регистрация как
+                    <span class="popup-close"></span>
+                </div>
+                <div class="popup-body">
+                    <div class="popup-grid">
+                        <div class="popup-col">
+                            <a href="#" class="popup-reg__btn">Розничный клиент</a>
+                        </div>
+                        <div class="popup-col">
+                            <a href="#" class="popup-reg__btn">Оптовый клиент</a>
+                        </div>
+                    </div>
+
+                </div><!--popup-body-->
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <div class="mfp-wrap popup-entry" tabindex="-1" style="overflow-x: hidden; overflow-y: auto;">

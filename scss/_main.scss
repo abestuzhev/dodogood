@@ -291,6 +291,7 @@ main {
         }
 
         &__item {
+            margin-left: 10px;
             a {
                 display: block;
                 font-size: 14px;
@@ -762,6 +763,12 @@ main {
                     transform: rotate(180deg);
                     transition: all .1s ease;
                 }
+            }
+
+            .c-counter {
+                margin-left: 14px;
+                display: inline-block;
+                vertical-align: top;
             }
         }
 
@@ -1398,6 +1405,7 @@ main {
     }
 
     &-btn {
+        display: none;
         position: absolute;
         z-index: 12;
         bottom: 30px;

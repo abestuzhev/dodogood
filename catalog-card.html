@@ -365,8 +365,13 @@
                         <div class="product-card__operation">
                             <div class="product-card-size">
                                 <div class="product-card-size__title active">
-                                    Размерный ряд
+                                    <span>Размерный ряд</span>
                                     <svg class="c-symbol symbol-arrow-down"><use xlink:href="#symbol-arrow-down" /></svg>
+                                    <div class="c-counter">
+                                        <button type="button" class="but c-counter__btn dec"></button>
+                                        <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                        <button type="button" class="but c-counter__btn inc"></button>
+                                    </div>
                                 </div>
                                 <ul class="product-card-size__list">
                                     <li class="product-card-size__item">

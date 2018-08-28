@@ -76,9 +76,12 @@ $(function(){
     $('.c-select').SumoSelect();
 
     var swiperSlider = new Swiper('.swiper-slider', {
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev'
+        // navigation: {
+        //     nextEl: '.swiper-button-next',
+        //     prevEl: '.swiper-button-prev'
+        // },
+        pagination: {
+            el: '.swiper-pagination',
         },
     });
 
@@ -219,8 +222,8 @@ $(function(){
     // }
     // catalogItemCounter('.fieldCount');
 
-    $(document).on('click', '.product-card-size__title', function(){
-        $(this).toggleClass('active');
+    $(document).on('click', '.product-card-size__title span', function(){
+        $(this).parent().toggleClass('active');
         $('.product-card-size__list').slideToggle(300);
     });
 
