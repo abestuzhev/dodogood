@@ -1216,14 +1216,14 @@ a {
   width: 25% !important; }
 
 .header-col__center {
-  width: 40% !important; }
+  width: 50% !important; }
 
 .header-col__right {
   width: 24% !important;
   padding: 8px 0 !important; }
 
 .header-slogan {
-  margin-top: 14px; }
+  margin-top: 25px; }
 
 .header {
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.09);
@@ -1241,7 +1241,7 @@ a {
         display: inline-block; }
       .header-top-menu__link {
         display: inline-block;
-        padding: 0 15px;
+        padding: 5px 15px;
         font-size: 12px;
         text-transform: uppercase;
         color: #ffffff;
@@ -1330,8 +1330,8 @@ a {
         transform: rotate(-45deg); }
   .header-call__btn {
     display: inline-block;
-    padding: 6px 15px;
-    font-size: 12px;
+    padding: 3px 15px;
+    font-size: 11px;
     background-color: #ec0c0c; }
   .header-operation {
     text-align: right; }
