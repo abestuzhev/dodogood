@@ -544,9 +544,9 @@ main {
         width: 420px;
         //height: 730px;
         
-        .show {
-            overflow: hidden;
-        }
+        //.show {
+        //    overflow: hidden;
+        //}
     }
 
     &__img {
@@ -1486,6 +1486,34 @@ main {
 
 
 
+.header-col__right {
+    text-align: right;
+}
+
+.header-col {
+    padding: 0px ;
+}
+
+.header-login {
+    margin-bottom: 12px;
+}
+
+.header-col__left {
+    width: 25% ;
+}
+
+.header-col__center {
+    width: 50% ;
+}
+
+.header-col__right {
+    width: 24% ;
+    padding: 8px 0 ;
+}
+
+.header-slogan {
+    margin-top: 25px;
+}
 
 
 

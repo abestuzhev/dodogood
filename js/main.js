@@ -103,7 +103,7 @@ $(function(){
                 spaceBetween: 10
             },
             // when window width is <= 480px
-            730: {
+            830: {
                 slidesPerView: 2,
                 spaceBetween: 20
             },

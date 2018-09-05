@@ -56,7 +56,9 @@
                     </li>
                 </ul>
                 <div class="header-top-contact">
-                    <span>Звоните нам</span>
+                    <!--<span>Звоните нам</span>-->
+
+                    <a href="#" class="header-call__btn">Заказать звонок</a>
                     <a href="#">+7 (495) 502 49 77</a>
                     <a href="#">+7 (925) 502 49 77</a>
                 </div>
@@ -66,14 +68,9 @@
             <div class="c-layout">
                 <ul class="header-grid">
                     <li class="header-col header-col__left">
-                        <div class="header-login">
-                            <a href="#" class="header-login__item header-login__entry">Вход</a>
-                            <a href="#" class="header-login__item header-login__reg">Регистрация</a>
-                        </div>
+
 
                         <a href="#" class="header-menu__mobile"></a>
-                    </li>
-                    <li class="header-col header-col__center">
                         <a href="/" class="header-logo">
                             <img src="./img/logo.svg" alt="">
                         </a>
@@ -81,7 +78,14 @@
                             <img src="./img/logo-mobile.svg" alt="">
                         </a>
                     </li>
+                    <li class="header-col header-col__center">
+                        <div class="header-slogan">Оптово-розничный интернет-магазин одежды от производителя</div>
+                    </li>
                     <li class="header-col header-col__right">
+                        <div class="header-login">
+                            <a href="#" class="header-login__item header-login__entry">Вход</a>
+                            <a href="#" class="header-login__item header-login__reg">Регистрация</a>
+                        </div>
                         <div class="header-operation">
                             <div class="header-operation__item">
                                 <div class="header-search">
@@ -95,7 +99,10 @@
                                 </div>
                             </div>
                             <div class="header-operation__item">
-                                <a href="#" class="header-basket"><span>Корзина пуста</span></a>
+                                <a href="#" class="header-basket">
+                                    <div class="header-basket__count">3</div>
+                                    <div class="header-basket__text"><span>3</span> товара в корзине</div>
+                                </a>
                             </div>
                         </div>
                     </li>
@@ -193,12 +200,12 @@
                         <li class="catalog-filter-mobile__item">
                             <div class="range-slider">
                                 <div class="formCost">
-                                    <input type="text" class="form__input" id="minCost-price" value="0"/>
+                                    <input type="text" class="form__input" id="minCost-price" value="0">
                                     <span> − </span>
-                                    <input type="text" class="form__input" id="maxCost-price" value="99999"/>
+                                    <input type="text" class="form__input" id="maxCost-price" value="99999">
                                 </div>
                                 <div class="sliderCont">
-                                    <div class="range-slider_default" id="slider-price"></div>
+                                    <div class="range-slider_default ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content" id="slider-price"><div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 0%; width: 100%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 0%;"></span><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 100%;"></span></div>
                                 </div>
                             </div>
                         </li>

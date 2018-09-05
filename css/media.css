@@ -48,6 +48,24 @@
     }
 }
 
+@media (max-width: 1040px) {
+    .header-col__center {
+        width: 40%;
+    }
+
+    .header-col__right {
+        width: 29%;
+    }
+
+    .header-slogan {
+        margin-top: 13px;
+    }
+
+    .header-col__left {
+        width: 31%;
+    }
+}
+
 @media (max-width: 960px) and (min-width:800px){
     .catalog-list__item {
         width: 50%;
@@ -168,6 +186,16 @@
 
 }
 
+@media (max-width: 870px) {
+    .header-col__center {
+        display: none;
+    }
+
+    .header-col__right {
+        width: 69%;
+    }
+}
+
 @media (max-width: 800px) {
 
     .c-layout {
@@ -238,9 +266,22 @@
         display: none;
     }
 
+    .header-operation__item {
+        padding: 9px 23px;
+    }
+
     .header-operation-mobile,
     .header-menu__mobile {
         display: block;
+    }
+
+    .header-menu__mobile {
+        float: left;
+        margin: 7px 10px 7px 0;
+    }
+
+    .header-body {
+        padding: 0;
     }
 
     .header-col__center {
@@ -333,6 +374,10 @@
         margin-bottom: 40px;
     }
 
+    .basket-card-product-property__list {
+        margin-top: 10px;
+    }
+
 }
 
 @media (max-width: 730px) {
@@ -364,6 +409,22 @@
     .product-card-slider {
         margin: 0 auto 20px;
     }
+
+    .product-card-slider .show {
+        height: auto;
+    }
+
+    .ordering-body {
+        width: 100%;
+    }
+
+    .about-body {
+        width: 100%;
+    }
+
+    .about img {
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 680px) {
@@ -392,12 +453,49 @@
     }
 
     .basket-card__about {
-
+        margin-bottom: 20px;
     }
 
     .basket-card__operation {
         margin-left: 0;
+        width: 100%;
     }
+
+    .basket-card__operation .basket-card__col:nth-child(1) {
+        width: 26%;
+    }
+
+    .basket-card__operation .basket-card__col:nth-child(2) {
+        width: 39%;
+    }
+
+    .basket-card__img {
+        height: 197px;
+    }
+
+    .basket-card__about .basket-card__col:nth-child(1) {
+        width: 42%;
+    }
+
+    .basket-card__about .basket-card__col:nth-child(2) {
+        width: 57%;
+    }
+
+    .basket-card__about .basket-card__col:nth-child(3) {
+        margin-top: 13px;
+    }
+
+    .basket-card__delete {
+        right: -8px;
+        top: 0px;
+    }
+
+    .basket-card-product__accent {
+        padding-right: 6px;
+    }
+
+
+
 }
 
 @media (max-width: 500px) {
@@ -463,4 +561,40 @@
         left: -30%;
     }
 
+
+    .small-img {
+        left: 0;
+    }
+
+    .small-container {
+        left: 18px;
+        right: 18px;
+        width: 85%;
+    }
+
+    .profile-table__header {
+        display: none;
+    }
+
+    .profile-table__col:nth-child(1),
+    .profile-table__col:nth-child(2),
+    .profile-table__col:nth-child(3),
+    .profile-table__col:nth-child(4) {
+        width: 100%;
+        float: none;
+        margin-bottom: 4px;
+    }
+
+    .profile-table__col:nth-child(1):before {
+        content: 'Дата заказа: ';
+    }
+    .profile-table__col:nth-child(2):before {
+        content: '№ заказа: ';
+    }
+    .profile-table__col:nth-child(3):before {
+        content: 'Сумма заказа: ';
+    }
+    .profile-table__col:nth-child(4):before {
+        content: 'Статус заказа: ';
+    }
 }
