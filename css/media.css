@@ -437,6 +437,13 @@
         background-position: 0% 50%;
     }
 }
+
+@media (max-width: 580px) {
+    .popup {
+        max-width: 100%;
+        width: 100%;
+    }
+}
 @media (max-width: 540px) {
     .catalog-list__item {
         width: 100%;
