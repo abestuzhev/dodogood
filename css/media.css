@@ -437,13 +437,6 @@
         background-position: 0% 50%;
     }
 }
-
-@media (max-width: 580px) {
-    .popup {
-        max-width: 100%;
-        width: 100%;
-    }
-}
 @media (max-width: 540px) {
     .catalog-list__item {
         width: 100%;
@@ -603,5 +596,39 @@
     }
     .profile-table__col:nth-child(4):before {
         content: 'Статус заказа: ';
+    }
+}
+
+/*карточки в две колонки и убираем ховер*/
+.header-mobile-slogan {
+    display: none;
+}
+
+@media screen and (max-width: 720px){
+    .header-mobile-slogan {
+        text-align: center;
+        display: block;
+        padding: 6px 10px;
+    }
+}
+
+@media (max-width: 540px){
+    .c-card-product:hover .c-card-product-extra {
+        display: none;
+    }
+
+    .c-card-product {
+        width: 100%;
+    }
+
+    .catalog-list__item {
+        width: 50%;
+        float: left;
+    }
+
+    .c-card-product__price,
+    .c-card-product__type {
+        float: none;
+        width: 100%;
     }
 }
