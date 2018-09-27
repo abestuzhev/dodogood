@@ -500,7 +500,10 @@
     }
 
 
-
+    .product-card__retail select,
+    .product-card-size__col .SumoSelect {
+        width: 129px;
+    }
 
 
 }
