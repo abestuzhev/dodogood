@@ -505,6 +505,10 @@
         width: 129px;
     }
 
+    .header-logo-mobile {
+        left: -9px;
+    }
+
 
 }
 
