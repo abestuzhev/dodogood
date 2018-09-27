@@ -1,5 +1,19 @@
 .header {
 
+    &-sticky {
+        transition: all .05s ease-in-out;
+        &.sticky {
+            transition: all .05s ease-in-out;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 999;
+            background-color: #fff;
+            box-shadow: 0 5px 10px rgba(0,0,0,.2);
+        }
+    }
+
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.09);
     &-top {
         background-color: #4a4a4a;

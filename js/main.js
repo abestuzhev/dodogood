@@ -280,5 +280,46 @@ $(function(){
     showPopup(".header-login__reg", '.popup-reg');
 
 
+    /*липкая шапка*/
+    $(window).scroll(function(){
+        var bo = $(window).scrollTop();
+        // var $header = $(".header");
+        var $headerWrap = $(".header-sticky");
+        // var $logo = $("#symbol-logo");
+        var $headerHeight = $headerWrap.height();
+        if ( bo >= 1 ) {/*значение при котором не дергается ничего 106*/
+            // $header.addClass('header-top__hide');
+            // $header.addClass('sticky');
+            $headerWrap.addClass('sticky');
+            // $logo.addClass('fixed-logo');
+
+            // $('main').css({
+            //     'padding-top': $headerHeight
+            // });
+            // $header.addClass('fixed-header');
+        } else {
+            // $header.removeClass('header-top__hide');
+            // $header.removeClass('sticky');
+            $headerWrap.removeClass('sticky');
+            // $logo.removeClass('fixed-logo');
+            // $header.removeClass('fixed-header');
+            // $('main').css({
+            //     'padding-top': '0'
+            // });
+        }
+
+        // console.log('высота wrapperHeight: ' + wrapperHeight)
+        // if( wrapperHeight + 10 > documentHeight){
+        //     $('.wrapper').css({
+        //         'padding-bottom': '7rem'
+        //     })
+        // }
+        //
+        // if( wrapperHeight + 300 > documentHeight){
+        //     $('.wrapper').css({
+        //         'padding-bottom': '0'
+        //     })
+        // }
+    });
 
 });

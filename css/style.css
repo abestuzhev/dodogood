@@ -1206,6 +1206,22 @@ a {
 .header {
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.09);
           box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.09); }
+  .header-sticky {
+    -webkit-transition: all .05s ease-in-out;
+    -o-transition: all .05s ease-in-out;
+    transition: all .05s ease-in-out; }
+    .header-sticky.sticky {
+      -webkit-transition: all .05s ease-in-out;
+      -o-transition: all .05s ease-in-out;
+      transition: all .05s ease-in-out;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 999;
+      background-color: #fff;
+      -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+              box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
   .header-top {
     background-color: #4a4a4a;
     padding: 5px 0; }

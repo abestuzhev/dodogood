@@ -436,6 +436,11 @@
     .swiper-slide {
         background-position: 0% 50%;
     }
+
+    .popup {
+        max-width: 100%;
+        width: 100%;
+    }
 }
 @media (max-width: 540px) {
     .catalog-list__item {
@@ -493,6 +498,8 @@
     .basket-card-product__accent {
         padding-right: 6px;
     }
+
+
 
 
 
