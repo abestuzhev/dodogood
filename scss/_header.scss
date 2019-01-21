@@ -252,14 +252,23 @@
 
         &__form {
             position: absolute;
-            top: 0;
-            right: 105%;
+            top: -13px;
+            right: 140%;
+            opacity: 0;
+            visibility: hidden;
+            transition: all .2s ease;
+
+            &.is-show {
+                opacity: 1;
+                visibility: visible;
+                transition: all .2s ease;
+            }
         }
 
         &__input {
-            opacity: 0;
             border: none;
-            border-bottom: 1px solid #ccc;
+            border: 2px solid #716c6c !important;
+            width: 200px !important;
         }
 
         &-mobile {

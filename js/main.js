@@ -56,6 +56,14 @@ function showPopup(icon, popup) {
 
 $(function(){
 
+    /*показ инпута с поиском*/
+
+    $(document).on('click', '.header-search__icon', function(e){
+        e.preventDefault();
+        $('.header-search__form').toggleClass('is-show');
+        $('.header-search__input').focus();
+    });
+
 
     $(window).on('load',function() {
         equalheight('.c-card-product');
